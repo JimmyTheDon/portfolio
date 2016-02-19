@@ -227,8 +227,40 @@ body {
     z-index: 2;
 }
 #flower4{
-	
+	position: absolute;
+	left: 280px;
+	top: 155px;
+  	width: 0px;
+ 	height: 0px;
+  	border-right: 15px solid transparent;
+  	border-top: 15px solid purple;
+  	border-left: 15px solid purple;
+  	border-bottom: 15px solid purple;
+  	border-top-left-radius: 15px;
+  	border-top-right-radius: 15px;
+  	border-bottom-left-radius: 15px;
+  	border-bottom-right-radius: 15px;
+	-ms-transform: rotate(-80deg);
+    -webkit-transform: rotate(-80deg);
+    transform: rotate(-80deg);
+    z-index: 2;
 }
 #flower5{
-	
+	position: absolute;
+	left: 260px;
+	top: 155px;
+  	width: 0px;
+ 	height: 0px;
+  	border-right: 15px solid transparent;
+  	border-top: 15px solid purple;
+  	border-left: 15px solid purple;
+  	border-bottom: 15px solid purple;
+  	border-top-left-radius: 15px;
+  	border-top-right-radius: 15px;
+  	border-bottom-left-radius: 15px;
+  	border-bottom-right-radius: 15px;
+	-ms-transform: rotate(-92deg);
+    -webkit-transform: rotate(-92deg);
+    transform: rotate(-92deg);
+    z-index: 2;
 }
