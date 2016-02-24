@@ -1,0 +1,9 @@
+#img{
+	position: absolute;
+	top: 0px;
+	left: 74px;
+	z-index: 2;
+}
+#mycanvas{
+	z-index: 1;
+}
