@@ -6,4 +6,10 @@
 }
 #mycanvas{
 	z-index: 1;
+	width: 1428px;
+	height: 1428px;
+	background: red;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }

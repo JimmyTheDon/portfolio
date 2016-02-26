@@ -1,40 +1,37 @@
 <title>Wireframe 2</title>
-<script src="processing.js"></script>
 <link rel="stylesheet" href="styles.css">
+<script src="processing.js"></script>
 <script type="text/processing" data-processing-target="mycanvas">
+
 ArrayList<MovingNode> nodes;
 float maxDistance = 50;
-float dx = 100;
-float dy = 100;
-float maxNeighbors = 10;
+float dx = 10;
+float dy = 10;
+float maxNeighbors = 2.5;
  
 Boolean drawMode = true;
  
 void setup()
 {
   size(1428,1600);
-  //background(220);
   background(255);
   nodes = new ArrayList<MovingNode>();
 }
  
 void draw()
 {
-  //println(nodes.size());
-  addNewNode(mouseX,mouseY,random(-dx,dx),random(-dx,dx));
-   
-  //background(220);
-    background(255);
-   
-  if(drawMode)
-  {
-    if(mousePressed){
-      addNewNode(mouseX,mouseY,random(-dx,dx),random(-dx,dx));
-    }
-  } else
-  {
-    addNewNode(random(width),random(height),0,0);
-  }
+  addNewNode(width*0.25,height*0.25,random(-dx,dx),random(-dx,dx));
+  addNewNode(width/2,height/2,random(-dx,dx),random(-dx,dx));
+  addNewNode(width*0.75,height*0.75,random(-dx,dx),random(-dx,dx));
+  addNewNode(random(0,1428),random(0,1600),random(-dx,dx),random(-dx,dx));
+  addNewNode(random(0,1428),random(0,1600),random(-dx,dx),random(-dx,dx));
+  addNewNode(random(0,1428),random(0,1600),random(-dx,dx),random(-dx,dx));
+  addNewNode(random(0,1428),random(0,1600),random(-dx,dx),random(-dx,dx));
+  addNewNode(random(0,1428),random(0,1600),random(-dx,dx),random(-dx,dx));
+
+
+
+  background(255);
    
   for(int i=0; i<nodes.size(); i++)
   {
@@ -42,22 +39,12 @@ void draw()
     currentNode.setNumNeighbors( countNumNeighbors(currentNode,maxDistance) );
   }
    
-  /*for(int i=0; i<nodes.size(); i++)
-  {
-    MovingNode currentNode = nodes.get(i);
-    if(currentNode.x > width || currentNode.x < 0 || currentNode.y > height || currentNode.y < 0)
-    {
-      nodes.remove(currentNode);
-    }
-  }*/
-   
   for(int i = 0; i < nodes.size(); i++){
     MovingNode currentNode = nodes.get(i);
     for(int j=0; j<currentNode.neighbors.size(); j++)
     {
       MovingNode neighborNode = currentNode.neighbors.get(j);
-      //float lineColor = currentNode.calculateLineColor(neighborNode,maxDistance);
-      stroke(random(0,255));
+      stroke(random(0,255), random(0,255), random(0,255), random(0,255));
       line(currentNode.x,currentNode.y,neighborNode.x,neighborNode.y);
     }
     currentNode.display();
@@ -69,20 +56,11 @@ void draw()
  
 void addNewNode(float xPos, float yPos, float dx, float dy)
 {
-  //println("add new node");
-  //generates a random location within a 50x50px box around the mouse
-  //float xPos = mouseX + random(-50,50);
-  //float yPos = mouseY + random(-50,50);
-  //adds a node at this location
   MovingNode node = new MovingNode(xPos+dx,yPos+dy);
    
   node.setNumNeighbors( countNumNeighbors(node,maxDistance) );
    
-  //println("newly added node has " + node.numNeighbors + " neighbors");
-  //println("and neighbors.size() = " + node.neighbors.size());
-   
-   
-  if(node.numNeighbors < maxNeighbors){
+   if(node.numNeighbors < maxNeighbors){
     nodes.add(node);
     /*for(int i=0; i<nodes.size(); i++)
     {
