@@ -4,8 +4,8 @@
 
 // Example 1-1: stroke and fill
 function setup() {
-  var a1 = createCanvas(80, 160);
-  a1.parent("a1");
+  var a1 = createCanvas(400, 560);
+  a1.parent("a");
   noStroke(); 
   fill(0);
 }
