@@ -3,9 +3,10 @@
 // http://www.learningprocessing.com
 
 // Example 1-1: stroke and fill
-function setup(a2) {
-  var a2 = createCanvas(240, 240);
-  a2.parent("a2");
+
+function setup() {
+  var b1 = createCanvas(240, 160);
+  b1.parent("b1");
   noStroke(); 
   fill(0);
 }
@@ -14,5 +15,6 @@ function draw() {
   ellipse(mouseX,mouseY,50,50);
 }
 function mousePressed () {
-	setup(a2);
+	setup();
+	background(random(0,255))
 }
