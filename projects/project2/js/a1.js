@@ -14,7 +14,7 @@ var a = function( a ) {
 	}
 
 	a.draw = function() {
-  		a.ellipse(a.mouseX, a.mouseY, 50, 50);
+  		a.ellipse(a.mouseX, a.mouseY, 100, 100);
 	}
 	a.mousePressed = function() {
 		a.setup();
@@ -64,37 +64,16 @@ var myp5 = new p5(b2);
 var c = function( c ) {
 
 	c.setup = function() {
-  		var c1 = c.createCanvas(240, 420);
-  		c1.parent("c1");
-  		c.noStroke(); 
-  		c.fill(0);
+  		var c1 = c.createCanvas(400, 560);
+  		c1.parent("c");
 	}
 
 	c.draw = function() {
-  		c.ellipse(c.mouseX, c.mouseY, 50, 50);
-	}
-	c.mousePressed = function() {
-		c.setup();
-	}
-}
-
-var myp5 = new p5(c);
-
-var c = function( c ) {
-
-	c.setup = function() {
-  		var c2 = c.createCanvas(80, 80);
-  		c2.parent("c2");
-  		c.noStroke(); 
-  		c.fill(0);
-	}
-
-	c.draw = function() {
-  		c.ellipse(c.mouseX, c.mouseY, 50, 50);
-	}
-	c.mousePressed = function() {
-		c.setup();
-	}
+		var alpha = c.mouseX;
+		var alpha1 = c.mouseY;
+		c.background(alpha1, alpha, 127);
+  		
+	}	
 }
 
 var myp5 = new p5(c);
@@ -102,7 +81,7 @@ var myp5 = new p5(c);
 var d = function( d ) {
 
 	d.setup = function() {
-  		var d1 = d.createCanvas(240, 400, d.webgl);
+  		var d1 = d.createCanvas(240, 400);
   		d1.parent("d1");
 	}
 
@@ -115,3 +94,54 @@ var d = function( d ) {
 }
 
 var myp5 = new p5(d);
+
+var cc = function( cc ) {
+
+	cc.setup = function() {
+  		var c1 = cc.createCanvas(240, 420);
+  		c1.parent("c1");
+	}
+
+	cc.draw = function() {
+		var alpha = cc.mouseX;
+		var alpha1 = cc.mouseY;
+		cc.background(alpha, 127, alpha1);
+  		
+	}	
+}
+
+var myp5 = new p5(cc);
+
+var cc = function( cc ) {
+
+	cc.setup = function() {
+  		var c2 = cc.createCanvas(80, 80);
+  		c2.parent("c2");
+	}
+
+	cc.draw = function() {
+		var alpha = cc.mouseX + 240;
+		var alpha1 = cc.mouseY + 170;
+		cc.background(alpha, 127, alpha1);
+  		
+	}	
+}
+
+var myp5 = new p5(cc);
+
+var dd = function( dd ) {
+
+	dd.setup = function() {
+  		var d2 = dd.createCanvas(400, 560);
+  		d2.parent("d");
+	}
+
+	dd.draw = function() {
+		var alpha = dd.mouseX;
+		var alpha1 = dd.mouseY;
+		dd.background(alpha1,127, alpha);
+  		
+	}	
+}
+
+var myp5 = new p5(dd);

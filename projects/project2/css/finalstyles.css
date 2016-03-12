@@ -1,10 +1,16 @@
+#container {
+	height: 100%;
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
 .Character {
 	position: relative;
 	float: left;
 	height: 560px;
 	width: 400px;
 	/*background: black;*/
-	margin: 10px;
+	margin: 0px;
 	z-index: 2;
 }
 #a {
@@ -92,16 +98,25 @@
 	height: 420px;
 	width: 240px;
 	border-radius: 120px;
-	background: orange;
+	z-index: 2;
 }
-#defaultCanvas3 {
+#defaultCanvas5 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	height: 420px;
 	width: 240px;
 	border-radius: 120px;
-	background: orange;
+	z-index: 2;
+}
+#defaultCanvas3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 560px;
+	width: 400px;
+	/*background: black;*/
+	z-index: 1;
 }
 #c2 {
 	position: absolute;
@@ -109,7 +124,9 @@
 	top: 240px;
 	height: 80px;
 	width: 80px;
-	background: orange;
+	z-index: 2;
+	background: white;
+	z-index: 2;
 }
 #d1 {
 	position: absolute;
@@ -120,7 +137,7 @@
  	border-top-right-radius: 240px;
  	border-bottom-right-radius: 240px;
 }
-#defaultCanvas5 {
+#defaultCanvas4 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
