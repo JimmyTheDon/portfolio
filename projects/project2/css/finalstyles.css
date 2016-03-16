@@ -152,7 +152,6 @@
 	top: 80px;
 	width: 320px;
 	height: 160px;
-	background: purple;
 }
 #e2 {
 	position: absolute;
@@ -160,7 +159,6 @@
 	top: 240px;
 	height: 80px;
 	width: 80px;
-	background: purple;
 }
 #e3 {
 	position: absolute;
@@ -168,7 +166,6 @@
 	top: 320px;
 	width: 320px;
 	height: 160px;
-	background: purple;
 }
 #f1 {
 	position: absolute;
@@ -194,7 +191,7 @@
 	height: 240px;
 	background: purple;
 }
-#g1 {
+#defaultCanvas18 {
 	position: absolute;
 	top: 70px;
 	left: 80px;
@@ -212,7 +209,7 @@
 	width: 320px;
 	background: orange;
 }
-#g3 {
+#defaultCanvas20 {
 	position: absolute;
 	top: 320px;
 	left: 80px;
@@ -228,7 +225,6 @@
 	top: 320px;
 	height: 80px;
 	width: 120px;
-	background: black;
 }
 #h1 {
 	position: absolute;
