@@ -1,0 +1,258 @@
+#intro {
+	position: relative;
+	top: 10px;
+	left: 20px;
+	height: 0px;
+	width: 200px;
+}
+#container {
+	height: 100%;
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+.Character {
+	position: relative;
+	float: left;
+	height: 560px;
+	width: 400px;
+	/*background: black;*/
+	margin: 0px;
+	z-index: 2;
+}
+#one {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 160px;
+	height: 560px;
+	background: black;
+}
+#one1 {
+	position: absolute;
+	left: 240px;
+	top: 0px;
+	width: 160px;
+	height: 560px;
+	background: black;
+}
+#two {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	width: 240px;
+	height: 160px;
+	background: black;
+	border-radius: 80px;
+}
+#two1 {
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	width: 320px;
+	height: 280px;
+	background: black;
+	-webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 14%);
+	clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 14%);
+}
+#two2 {
+	position: absolute;
+	top: 240px;
+	left: 80px;
+	width: 320px;
+	height: 240px;
+	background: black;
+	-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#three{
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 320px;
+	height: 160px;
+	background: black;
+	border-radius: 0 80px 80px 0;
+	z-index: 2;
+}
+#three1{
+	position: absolute;
+	top: 320px;
+	left: 0px;
+	width: 320px;
+	height: 160px;
+	background: black;
+	border-radius: 0 80px 80px 0;
+	z-index: 2;
+}
+#four {
+	position: absolute;
+	left: 80px;
+	top: 0px;
+	width: 240px;
+	height: 240px;
+	background: black;
+}
+#four1 {
+	position: absolute;
+	left: 320px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background: black;
+}
+#four2 {
+	position: absolute;
+	left: 0px;
+	top: 320px;
+	width: 320px;
+	height: 240px;
+	background: black;
+}
+#five {
+	position: absolute;
+	top: 320px;
+	left: 80px;
+	width: 240px;
+	height: 160px;
+	background: black;
+	border-radius: 80px;
+	z-index: 3;
+}
+#five1 {
+	position: absolute;
+	top: 320px;
+	left: 0px;
+	height: 80px;
+	width: 160px;
+	background: black;
+	z-index: 3;
+}
+#five2 {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	height: 320px;
+	width: 320px;
+	background: black;
+	z-index: 1;
+}
+#five3 {
+	position: absolute;
+	top: 240px;
+	left: 0px;
+	height: 320px;
+	width: 400px;
+	border-radius: 0 160px 160px 0;
+	background: white;
+	z-index: 2;
+}
+
+#six {
+	position: absolute;
+	top: 320px;
+	left: 80px;
+	width: 240px;
+	height: 160px;
+	background: black;
+	border-radius: 80px;
+	z-index: 3;
+}
+#six1 {
+	position: absolute;
+	top: 0px;
+	left: 80px;
+	height: 400px;
+	width: 320px;
+	background: black;
+	z-index: 1;
+}
+#six2 {
+	position: absolute;
+	top: 240px;
+	left: 0px;
+	height: 320px;
+	width: 400px;
+	border-radius: 160px;
+	background: white;
+	z-index: 2;
+}
+#seven {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	height: 480px;
+	width: 320px;
+	-webkit-clip-path: polygon(100% 0, 0% 100%, 0 0);
+	clip-path: polygon(100% 0, 0% 100%, 0 0);
+	background: black;
+}
+#eight {
+	position: absolute;
+	top: 320px;
+	left: 80px;
+	width: 240px;
+	height: 160px;
+	background: black;
+	border-radius: 80px;
+	z-index: 3;
+}
+#eight1 {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	width: 240px;
+	height: 160px;
+	background: black;
+	border-radius: 80px;
+	z-index: 3;
+}
+#nine {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	width: 240px;
+	height: 160px;
+	background: black;
+	border-radius: 80px;
+	z-index: 3;
+}
+#nine1 {
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	height: 400px;
+	width: 320px;
+	background: black;
+	z-index: 1;
+}
+#nine2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 320px;
+	width: 400px;
+	border-radius: 160px;
+	background: white;
+	z-index: 2;
+}
+#zero {
+	position: absolute;
+	top: 70px;
+	left: 80px;
+	height: 420px;
+	width: 240px;
+	border-radius: 120px;
+	background: black;
+}
+#zero1 {
+	position: absolute;
+	top: 70px;
+	left: 80px;
+	height: 420px;
+	width: 240px;
+	-webkit-clip-path: polygon(100% 0, 100% 25%, 0 100%, 0 75%);
+	clip-path: polygon(100% 0, 100% 25%, 0 100%, 0 75%);
+	background: white;
+}

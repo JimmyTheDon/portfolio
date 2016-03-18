@@ -1,3 +1,10 @@
+#intro {
+	position: relative;
+	top: 10px;
+	left: 20px;
+	height: 0px;
+	width: 200px;
+}
 #container {
 	height: 100%;
 	width: 800px;
@@ -264,9 +271,8 @@
 	top: 0px;
 	width: 320px;
 	height: 320px;
-	background: magenta;
 }
-#j2 {
+#defaultCanvas29 {
 	position: absolute;
 	top: 320px;
 	left: 80px;
@@ -274,23 +280,22 @@
 	width: 240px;
 	border-bottom-right-radius: 120px;
 	border-bottom-left-radius: 120px;
-	background: magenta;
 }
 #k1 {
 	position: absolute;
 	left: 80px;
 	top: 0px;
 	border: 120px solid transparent;
-	border-left: 120px solid #007BFF;
-	border-top: 120px solid #007BFF;
+	border-left: 120px solid black;
+	border-top: 120px solid black;
 }
 #k2 {
 	position: absolute;
 	left: 80px;
 	top: 320px;
 	border: 120px solid transparent;
-	border-left: 120px solid #007BFF;
-	border-bottom: 120px solid #007BFF;
+	border-left: 120px solid black;
+	border-bottom: 120px solid black;
 }
 #l1 {
 	position: absolute;
@@ -298,53 +303,39 @@
 	top: 0px;
 	width: 320px;
 	height: 480px;
-	background: red;
+	background: white;
 }
 #m1 {
 	position: absolute;
 	left: 80px;
 	top: 120px;
-	border: 60px solid transparent;
-	border-left: 60px solid #007BFF;
-	border-bottom: 60px solid #007BFF;
-}
-#m2 {
-	position: absolute;
-	left: 200px;
-	top: 120px;
-	border: 60px solid transparent;
-	border-right: 60px solid #007BFF;
-	border-bottom: 60px solid #007BFF;
-}
-#m3 {
-	position: absolute;
-	left: 80px;
-	top: 240px;
+	height: 440px;
 	width: 240px;
-	height: 320px;
-	background: #007BFF;
+	-webkit-clip-path: polygon(50% 36%, 0% 0%, 0% 100%, 100% 100%, 100% 0);
+	clip-path: polygon(50% 36%, 0% 0%, 0% 100%, 100% 100%, 100% 0);
+	background: white;
 }
-#n1 {
+#defaultCanvas33 {
 	position: absolute;
 	left: 80px;
 	top: 120px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 200px 440px 0px;
-	border-color: transparent transparent #007bff transparent;
+	width: 200px;
+	height: 440px;
+	-webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+	clip-path: polygon(0 0, 0% 100%, 100% 100%);
+	background: black;
 }
-#n2 {
+#defaultCanvas34 {
 	position: absolute;
 	left: 120px;
 	top: 0px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 200px 440px 0;
-	border-color: transparent #007bff transparent transparent;
+	width: 200px;
+	height: 440px;
+	-webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+	clip-path: polygon(100% 0, 0 0, 100% 100%);
+	background: black;
 }
-#o1 {
+#defaultCanvas35 {
 	position: absolute;
 	top: 70px;
 	left: 80px;
@@ -361,25 +352,23 @@
 	height: 400px;
 	background: red;
 }
-#p3 {
+#defaultCanvas38 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	height: 320px;
 	width: 400px;
 	border-radius: 0 160px 160px 0;
-	background: black;
 }
-#p1 {
+#defaultCanvas39 {
 	position: absolute;
 	top: 80px;
 	left: 80px;
 	width: 240px;
 	height: 160px;
-	background: blue;
 	border-radius: 0 80px 80px 0;
 }
-#q1 {
+#defaultCanvas41 {
 	position: absolute;
 	top: 70px;
 	left: 80px;
@@ -394,7 +383,7 @@
 	top: 400px;
 	height: 80px;
 	width: 200px;
-	background: black;
+	background: white;
 	transform:rotate(45deg);
 }
 #r1{
@@ -403,7 +392,7 @@
 	left: 80px;
 	width: 240px;
 	height: 160px;
-	background: blue;
+	background: white;
 	border-radius: 0 80px 80px 0;
 }
 #r2 {
@@ -411,8 +400,8 @@
 	left: 80px;
 	top: 320px;
 	border: 120px solid transparent;
-	border-left: 120px solid #007BFF;
-	border-bottom: 120px solid #007BFF;
+	border-left: 120px solid white;
+	border-bottom: 120px solid white;
 }
 #s5 {
 	position: absolute;
@@ -420,7 +409,7 @@
 	left: 80px;
 	width: 240px;
 	height: 160px;
-	background: blue;
+	background: white;
 	border-radius: 80px;
 }
 #s6 {
@@ -429,7 +418,7 @@
 	left: 80px;
 	width: 240px;
 	height: 160px;
-	background: blue;
+	background: white;
 	border-radius: 80px;
 }
 #s1 {
@@ -438,7 +427,7 @@
 	left: 240px;
 	height: 240px;
 	width: 160px;
-	background: blue;
+	background: white;
 }
 #s2 {
 	position: absolute;
@@ -446,25 +435,32 @@
 	left: 0px;
 	height: 240px;
 	width: 160px;
-	background: blue;
+	background: white;
 }
-#s4 {
+#defaultCanvas45 {
 	position: absolute;
 	top: 240px;
 	left: 200px;
 	height: 320px;
 	width: 200px;
 	border-radius: 0 160px 0 0;
-	background: black;
+	background: white;
 }
-#s3 {
+#defaultCanvas44 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	height: 320px;
 	width: 200px;
 	border-radius: 0 0 0 160px;
-	background: black;
+	background: white;
+}
+#tr {
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	height: 560px;
+	width: 200px
 }
 #t1 {
 	position: absolute;
@@ -472,7 +468,7 @@
 	top: 80px;
 	width: 160px;
 	height: 480px;
-	background: magenta;
+	background: white;
 }
 #t2 {
 	position: absolute;
@@ -480,26 +476,28 @@
 	top: 80px;
 	width: 160px;
 	height: 480px;
-	background: magenta;
+	background: white;
 }
-#u1 {
+#defaultCanvas49 {
 	position: absolute;
 	top: 0px;
 	left: 80px;
 	height: 490px;
 	width: 240px;
 	border-radius: 0px 0px 120px 120px;
-	background: orange;
 }
-#v1 {
+#defaultCanvas50 {
+	z-index: 1
+}
+#defaultCanvas51 {
 	position: absolute;
 	top: 0px;
 	left: 80px;
-	width: 0;
-	height: 0;
-	border-left: 120px solid transparent;
-	border-right: 120px solid transparent;
-	border-top: 480px solid red;
+	width: 240;
+	height: 480;
+	-webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+	clip-path: polygon(100% 0, 0 0, 50% 100%);
+	z-index: 2;
 }
 
 #w1 {
@@ -507,16 +505,16 @@
 	left: 80px;
 	top: 320px;
 	border: 60px solid transparent;
-	border-left: 60px solid #007BFF;
-	border-top: 60px solid #007BFF;
+	border-left: 60px solid white;
+	border-top: 60px solid white;
 }
 #w2 {
 	position: absolute;
 	left: 200px;
 	top: 320px;
 	border: 60px solid transparent;
-	border-right: 60px solid #007BFF;
-	border-top: 60px solid #007BFF;
+	border-right: 60px solid white;
+	border-top: 60px solid white;
 }
 #w3 {
 	position: absolute;
@@ -524,7 +522,7 @@
 	top: 0px;
 	width: 240px;
 	height: 320px;
-	background: #007BFF;
+	background: white;
 }
 #x1 {
 	position: absolute;
@@ -532,7 +530,7 @@
 	left: 0px;
 	width: 200px;
 	height: 400px;
-	background: #1e90ff;
+	background: white;
 	-webkit-clip-path: polygon(60% 50%, 0 0, 0 100%);
 	clip-path: polygon(60% 50%, 0 0, 0 100%);
 }
@@ -542,7 +540,7 @@
 	left: 200px;
 	width: 200px;
 	height: 400px;
-	background: #1e90ff;
+	background: white;
 	-webkit-clip-path: polygon(40% 50%,100% 0, 100% 100%);
 	clip-path: polygon(40% 50%,100% 0, 100% 100%);
 }
@@ -564,7 +562,7 @@
 	width: 160px;
 	-webkit-clip-path: polygon(0 0, 100% 42%, 100% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 42%, 100% 100%, 0% 100%);
-	background: orange;
+	background: black;
 }
 #y2 {
 	position: absolute;
@@ -574,7 +572,7 @@
 	width: 160px;
 	-webkit-clip-path: polygon(0 42%, 100% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(0 42%, 100% 0, 100% 100%, 0% 100%);
-	background: orange;
+	background: black;
 }
 #z1 {
 	position: absolute;
@@ -584,7 +582,7 @@
 	width: 320px;
 	-webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
 	clip-path: polygon(0 0, 0 100%, 100% 0);
-	background: aqua;
+	background: black;
 }
 #z2 {
 	position: absolute;
@@ -594,5 +592,19 @@
 	width: 320px;
 	-webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
 	clip-path: polygon(0 100%, 100% 100%, 100% 0);
-	background: aqua;
+	background: black;
+}
+#end{ 
+	position: relative;
+	top: 7220px;
+	left: 20px;
+}
+
+#one {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 160px;
+	height: 560px;
+	background: black;
 }

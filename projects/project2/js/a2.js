@@ -4,17 +4,21 @@
 
 // Example 1-1: stroke and fill
 
-function setup() {
-  var b1 = createCanvas(240, 160);
-  b1.parent("b1");
-  noStroke(); 
-  fill(0);
+var a = function( a ) {
+
+	a.setup = function() {
+  		var a1 = a.createCanvas(400, 560);
+  		a1.parent("1");
+  		a.noStroke(); 
+  		a.fill(127);
+	}
+
+	a.draw = function() {
+  		a.ellipse(a.mouseX, a.mouseY, 100, 100);
+	}
+	a.mousePressed = function() {
+		a.setup();
+	}
 }
 
-function draw() {
-  ellipse(mouseX,mouseY,50,50);
-}
-function mousePressed () {
-	setup();
-	background(random(0,255))
-}
+var myp5 = new p5(a);
