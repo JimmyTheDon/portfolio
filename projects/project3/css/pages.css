@@ -15,9 +15,6 @@ body {
 
 /* Text
 -------------------------------------------------- */
-p {
-	margin-left: 64px;
-}
 .navitem{
 	position: relative;
 	top: 15%;
@@ -40,7 +37,10 @@ p {
 	top: 13em;
 }
 .text {
-	padding-right: 20%;
+	height: 1000px;
+	width: 80%;
+	background: green;
+	margin-left: 64px;
 }
 
 /* Image
