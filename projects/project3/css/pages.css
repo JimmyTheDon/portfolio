@@ -1,5 +1,5 @@
 body {
-	background: white;
+	background: black;
 	margin: 0;
 	padding: 0;
 }
@@ -27,20 +27,22 @@ body {
 	font-family: helvetica;
 	font-size: 3em;
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .copytext {
-	width: 35%;
+	width: 40%;
 	height: 100%;
-	background: red;
+	/*background: red;*/
 	position: relative;
 	top: 13em;
 }
 .text {
-	height: 1000px;
-	width: 80%;
-	background: green;
-	margin-left: 64px;
+	/*background: green;*/
+	margin: 50px;
+	font-family: sans-serif;
+	font-size: 12pt;
+	color: white;
+	line-height: 16pt;
 }
 
 /* Image
@@ -58,10 +60,11 @@ body {
 	z-index: 1;
 }
 .img {
-	width: 65%;
+	width: 60%;
 	height: 100%;
 	background: blue;
 	position: fixed;
 	top: 14em;
 	right: 0px;
 }
+
