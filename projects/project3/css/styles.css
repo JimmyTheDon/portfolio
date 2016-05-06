@@ -4,6 +4,7 @@ body {
 	background: white;
 	margin: 0;
 	padding: 0;
+    font-family: Helvetica;
 }
 .nav {
 	width: 100%;
@@ -71,7 +72,7 @@ ul {
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../img/p1.jpg);
+    background-image: url(../img/pink3.jpg);
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
@@ -79,11 +80,11 @@ ul {
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
-    background-image: url(../images/5.jpg);
+    background-image: url(../img/external2.jpg);
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-    background-image: url(../images/6.jpg);
+    background-image: url(../img/lgsd2.jpg);
     animation-delay: 30s; 
 }
 
@@ -134,10 +135,69 @@ ul {
 	font-family: helvetica;
 	font-size: 3em;
 	text-decoration: none;
-	color: black;
+	background: linear-gradient(227deg, #adfbff, #b8f785, #e7b8f5, #f5b8b8, #f5ecb8);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+    }
+.about {
+    width: 30%;
+    padding: 25px;
+    color: white;
+    position: relative;
+    float: left;
+    text-align: right;
+}
+.abouttext {
+    padding: 35px;
+    position: relative;
+    float: left;
+    color: white;
+    width: 35%;
+    line-height: 16pt;
+}
+.details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: grey;
+    opacity: .5;
+    vertical-align: bottom;
+    display: none;
+}
+.small:hover > .details {
+    display: block;
+}
+.desc {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 2em;
+    bottom: 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;    
+}
 
 /* Image
 -------------------------------------------------- */
@@ -156,20 +216,24 @@ ul {
 }
 .divide {
 	position: relative;
-	top: 42em;
+	top: 40.5em;
 	width: 100%;
-	height: 10em;
+    height: 200px;
 	background: black;
 	z-index: 1;
 }
 .content{
 	position: relative;
-	top: 42em;
+    top: 40.5em;
 }
 .small {
 	width: 25%;
-	margin-right: -4px;
-	margin-bottom: -4px;
+    position: relative;
+    float: left;
+
+}
+.prod{
+    width: 100%;
 }
 
 /* 1024 Break 
@@ -182,8 +246,6 @@ ul {
   /* image */
   	.small {
 		width: 33.33%;
-		margin-right: -4px;
-		margin-bottom: -4px;
 	}
 
 }
@@ -198,8 +260,6 @@ ul {
   /* image */
   	.small {
 		width: 50%;
-		margin-right: -4px;
-		margin-bottom: -4px;
 	}
 }
 
