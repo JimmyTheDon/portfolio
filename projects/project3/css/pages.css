@@ -196,3 +196,61 @@ ul {
 	right: 0px;
 }
 
+/* 1024 Break 
+-------------------------------------------------- */
+@media screen and (min-width : 756px) and (max-width : 1024px) {
+
+  /* text */
+    .copytext {
+        width: 50%;
+    }
+
+
+  /* image */
+    .img {
+        width: 50%;
+    }
+
+}
+
+/* 756 Break 
+-------------------------------------------------- */
+@media screen and (min-width: 600px) and (max-width : 756px) {
+
+  /* text */
+    .copytext {
+        width: 100%;
+    }
+
+
+  /* image */
+    .img {
+        width: 100%;
+        opacity: .3;
+        height: 100%;
+    }
+
+}
+
+/* 600 Break 
+-------------------------------------------------- */
+@media screen and (max-width: 600px) {
+
+  /* text */
+    .copytext {
+        width: 100%;
+    }
+    .logotext {
+        padding-top: .4em;
+        font-size: 20pt;
+    }
+
+
+  /* image */
+    .img {
+        width: 100%;
+        opacity: .3;
+        height: 100%;
+    }
+
+}

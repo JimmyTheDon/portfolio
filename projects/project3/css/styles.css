@@ -123,6 +123,9 @@ ul {
 
 /* Text
 -------------------------------------------------- */
+p {
+    margin: 0px;
+}
 .navitem{
 	position: relative;
 	top: 15%;
@@ -160,20 +163,18 @@ ul {
     100%{background-position:0% 50%}
     }
 .about {
-    width: 30%;
-    padding: 25px;
+    width: 100%;
+    padding: 55px 0 25px 0;
     color: white;
     position: relative;
-    float: left;
-    text-align: right;
+    text-align: center;
 }
 .abouttext {
-    padding: 35px;
-    position: relative;
-    float: left;
+    padding: 0 20% 55px 20%;
     color: white;
-    width: 35%;
+    width: 60%; 
     line-height: 16pt;
+    background: black;
 }
 .details {
     position: absolute;
@@ -218,9 +219,11 @@ ul {
 	position: relative;
 	top: 40.5em;
 	width: 100%;
-    height: 200px;
-	background: black;
+    height: 100%;
+    min-height: 200px;
+    max-height: 400px;
 	z-index: 1;
+    background: black;
 }
 .content{
 	position: relative;
@@ -234,6 +237,13 @@ ul {
 }
 .prod{
     width: 100%;
+}
+.bottomnav{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 0px;
+    background: black;
 }
 
 /* 1024 Break 
@@ -256,6 +266,10 @@ ul {
 @media screen and (min-width : 320px) and (max-width : 600px) {
 
   /* text */
+    .logotext {
+        padding-top: .4em;
+        font-size: 20pt;
+    }
 
   /* image */
   	.small {
@@ -269,6 +283,10 @@ ul {
 @media screen and (max-width : 320px) {
 
   /* text */
+    .logotext {
+        padding-top: .4em;
+        font-size: 20pt;
+    }
 
   /* image */
   	.small {
