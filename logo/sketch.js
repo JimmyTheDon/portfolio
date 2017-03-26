@@ -4,7 +4,7 @@ var letterj, letteri, letterm1, letterm2, lettery;
 var xpos, ypos, xspeed, yspeed;
 
 function preload() {
-  font = loadFont("/logo/assets/font.otf");
+  font = loadFont("/portfolio/logo/assets/font.otf");
 }
 
 function setup() {
