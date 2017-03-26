@@ -137,11 +137,11 @@ var side1 = function(side1) {
     side1.textSize(w/3);
     side1.fill(0);
     side1.textAlign(side1.CENTER,side1.CENTER);
-    letterj = side1.(new J());
-    letteri = side1.(new I());
-    letterm1 = side1.(new M());
-    letterm2 = side1.(new M());
-    lettery = side1.(new Y());
+    letterj = new J();
+    letteri = new I();
+    letterm1 = new M();
+    letterm2 = new M();
+    lettery = new Y();
   }
 
   side1.draw = function() {
