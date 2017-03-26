@@ -1,3 +1,4 @@
+
 var font;
 var letterj, letteri, letterm1, letterm2, lettery;
 var xpos, ypos, xspeed, yspeed;
