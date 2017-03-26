@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Jimmy Don Design</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="logo/libraries/p5.js"></script>
-	<script type="text/javascript">
-		var font;
+var font;
 var letterj, letteri, letterm1, letterm2, lettery;
 var xpos, ypos, xspeed, yspeed;
 
 function preload() {
-  font = loadFont("logo/assets/font.otf");
+  font = loadFont("assets/font.otf");
 }
 
 function setup() {
@@ -161,10 +154,3 @@ function Y() {
     this.xpos = constrain(this.xpos, width/6, width-(width/6));
   }
 }
-
-	</script>
-</head>
-<body>
-
-</body>
-</html>
