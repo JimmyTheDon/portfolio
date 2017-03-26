@@ -3,112 +3,64 @@
     src: url("logo/assets/font.otf");
     src: url("logo/assets/font.woff");
 }
-/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
-#tridiv {
-  perspective: 800px;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  font-size: 325%;
+body{
+	width: 100%;
 }
-.face {
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1);
+.wrap {
+	position: relative;
+	perspective: 1200px;
+	perspective-origin: 50% 300px;
+	}
+
+.cube {
+	position: relative;
+	top: 200px;
+	width: 300px;
+	transform-style: preserve-3d;
+	margin: 0 auto;
 }
-.scene, .shape, .face, .face-wrapper, .cr {
-  position: absolute;
-  transform-style: preserve-3d;
+
+.cube div {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	opacity: 0.5;
 }
-.scene {
-  width: 80em;
-  height: 80em;
-  top: 50%;
-  left: 50%;
-  margin: -40em 0 0 -40em;
+
+#back {
+	transform: translateZ(-150px) rotateY(180deg);
+	background: blue;
 }
-.shape {
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  transform-origin: 50%;
+#right {
+	transform: rotateY(-270deg) translateX(150px);
+	transform-origin: top right;
+	background: red;
 }
-.face, .face-wrapper {
-  overflow: hidden;
-  transform-origin: 0 0;
-  backface-visibility: hidden;
-  /* hidden by default, prevent blinking and other weird rendering glitchs */
+#left {
+	transform: rotateY(270deg) translateX(-150px);
+	transform-origin: center left;
+	background: lavender;
 }
-.face {
-  background-size: 100% 100%!important;
-  background-position: center;
+#top {
+	transform: rotateX(-90deg) translateY(-150px);
+	transform-origin: top center;
+	background: green;
 }
-.face-wrapper .face {
-  left: 100%;
-  width: 100%;
-  height: 100%
+#bottom {
+	transform: rotateX(90deg) translateY(150px);
+	transform-origin: bottom center;
+	background: black;
 }
-.photon-shader {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%
+#front {
+	transform: translateZ(150px);
+	background: orange;
 }
-.side {
-  left: 50%;
+
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
 }
-.cr, .cr .side {
-  height: 100%;
-}
-[class*="cuboid"] .ft, [class*="cuboid"] .bk {
-  width: 100%;
-  height: 100%;
-}
-[class*="cuboid"] .bk {
-  left: 100%;
-}
-[class*="cuboid"] .rt {
-  transform: rotateY(-90deg) translateX(-50%);
-}
-[class*="cuboid"] .lt {
-  transform: rotateY(90deg) translateX(-50%);
-}
-[class*="cuboid"] .tp {
-  transform: rotateX(90deg) translateY(-50%);
-}
-[class*="cuboid"] .bm {
-  transform: rotateX(-90deg) translateY(-50%);
-}
-[class*="cuboid"] .lt {
-  left: 100%;
-}
-[class*="cuboid"] .bm {
-  top: 100%;
-}
-/* .cub-1 styles */
-.cub-1 {
-  transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  opacity:1;
-  width:6em;
-  height:6em;
-  margin:-3em 0 0 -3em;
-}
-.cub-1 .ft {
-  transform:translateZ(3em);
-}
-.cub-1 .bk {
-  transform:translateZ(-3em) rotateY(180deg);
-}
-.cub-1 .rt, .cub-1 .lt {
-  width:6em;
-  height:6em;
-}
-.cub-1 .tp, .cub-1 .bm {
-  width:6em;
-  height:6em;
-}
-.cub-1 .face {
-  background-color:#FFFFFF;
+
+.cube {
+	animation: spin 10s infinite linear;
 }

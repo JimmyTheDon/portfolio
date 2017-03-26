@@ -130,7 +130,7 @@ var side1 = function(side1) {
 
   side1.setup = function() {
     var side1parent = side1.createCanvas(300,300);
-    side1parent.parent("face tp");
+    side1parent.parent("front");
     side1.textFont(font);
     side1.textSize(width/3);
     side1.fill(0);
