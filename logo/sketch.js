@@ -1,3 +1,50 @@
+var mouse = function(mouse){
+        var xoff = 255.0;
+        var xincrement = 0.01;
+        var r,g,b;
+        mouse.setup = function() {
+          var mouseparent = mouse.createCanvas(mouse.windowWidth, mouse.windowHeight);
+          mouseparent.parent("fullpage");
+          mouse.noCursor();
+          mouse.background(255);
+        }
+        mouse.draw = function() {
+          r=mouse.map(mouse.mouseX,0,mouse.windowWidth,0,255);
+          g=mouse.map(mouse.mouseY,0,mouse.windowHeight,0,255);
+          b=127;
+          mouse.noStroke();
+          mouse.fill(255,75);
+          mouse.rect(0,0,mouse.width,mouse.height);
+          mouse.strokeWeight(5);
+          mouse.stroke(r,g,b);
+          var n = mouse.noise(xoff)*mouse.width;
+          xoff -= xincrement;
+          mouse.noFill();
+          mouse.beginShape();
+          mouse.vertex(mouse.mouseX,mouse.mouseY);
+          mouse.vertex(mouse.mouseX,mouse.mouseY+50);
+          mouse.vertex(mouse.mouseX+10,mouse.mouseY+40);
+          mouse.vertex(mouse.mouseX+10,mouse.mouseY+40);
+          mouse.vertex(mouse.mouseX+20,mouse.mouseY+60);
+          mouse.vertex(mouse.mouseX+30,mouse.mouseY+55);
+          mouse.vertex(mouse.mouseX+21.36,mouse.mouseY+35.36);
+          mouse.vertex(mouse.mouseX+35.36,mouse.mouseY+35.36);
+          mouse.endShape(mouse.CLOSE);
+          mouse.strokeWeight(5);
+          mouse.stroke(mouse.random(0,255),20);
+          /*beginShape();
+          for(var x=50; x<=windowWidth-50;x+=15) {
+              var modx=random(0-(windowHeight/10),windowHeight/10);
+              vertex(x,(windowHeight/2)+modx);
+          }
+          endShape();*/
+        }
+        mouse.windowResized = function() {
+          mouse.resizeCanvas(mouse.windowWidth, mouse.windowHeight);
+        }
+}
+var myp5 = new p5(mouse);
+
 var side1 = function(side1) {
 var font;
 var letterj, letteri, letterm1, letterm2, lettery;
@@ -144,7 +191,7 @@ var y = "Y";
   }
 
   side1.draw = function() {
-    side1.background(255,0);
+    side1.background(255);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -307,7 +354,7 @@ var y = "Y";
   }
 
   side2.draw = function() {
-    side2.background(255,0);
+    side2.background(255);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -459,7 +506,7 @@ var y = "Y";
     lettery = new Y();
   }
   side3.draw = function() {
-    side3.background(255,0);
+    side3.background(255);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -610,7 +657,7 @@ var y = "Y";
     lettery = new Y();
   }
   side4.draw = function() {
-    side4.background(255,0);
+    side4.background(255);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -761,7 +808,7 @@ var y = "Y";
     lettery = new Y();
   }
   side5.draw = function() {
-    side5.background(255,0);
+    side5.background(255);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -912,7 +959,7 @@ var y = "Y";
     lettery = new Y();
   }
   side6.draw = function() {
-    side6.background(255,0);
+    side6.background(255);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -926,50 +973,3 @@ var y = "Y";
   }
 }
 var myp5 = new p5(side6);
-
-var mouse = function(mouse){
-        var xoff = 255.0;
-        var xincrement = 0.01;
-        var r,g,b;
-        mouse.setup = function() {
-          var mouseparent = mouse.createCanvas(mouse.windowWidth, mouse.windowHeight);
-          mouseparent.parent("fullpage");
-          mouse.noCursor();
-          mouse.background(255,0);
-        }
-        mouse.draw = function() {
-          r=mouse.map(mouse.mouseX,0,mouse.windowWidth,0,255);
-          g=mouse.map(mouse.mouseY,0,mouse.windowHeight,0,255);
-          b=127;
-          mouse.noStroke();
-          mouse.fill(255,75);
-          mouse.rect(0,0,mouse.width,mouse.height);
-          mouse.strokeWeight(5);
-          mouse.stroke(r,g,b);
-          var n = mouse.noise(xoff)*mouse.width;
-          xoff -= xincrement;
-          mouse.noFill();
-          mouse.beginShape();
-          mouse.vertex(mouse.mouseX,mouse.mouseY);
-          mouse.vertex(mouse.mouseX,mouse.mouseY+50);
-          mouse.vertex(mouse.mouseX+10,mouse.mouseY+40);
-          mouse.vertex(mouse.mouseX+10,mouse.mouseY+40);
-          mouse.vertex(mouse.mouseX+20,mouse.mouseY+60);
-          mouse.vertex(mouse.mouseX+30,mouse.mouseY+55);
-          mouse.vertex(mouse.mouseX+21.36,mouse.mouseY+35.36);
-          mouse.vertex(mouse.mouseX+35.36,mouse.mouseY+35.36);
-          mouse.endShape(mouse.CLOSE);
-          mouse.strokeWeight(5);
-          mouse.stroke(mouse.random(0,255),20);
-          /*beginShape();
-          for(var x=50; x<=windowWidth-50;x+=15) {
-              var modx=random(0-(windowHeight/10),windowHeight/10);
-              vertex(x,(windowHeight/2)+modx);
-          }
-          endShape();*/
-        }
-        mouse.windowResized = function() {
-          mouse.resizeCanvas(mouse.windowWidth, mouse.windowHeight);
-        }
-}
-var myp5 = new p5(mouse);
