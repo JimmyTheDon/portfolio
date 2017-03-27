@@ -109,6 +109,7 @@ body{
 	animation: spin 10s infinite linear;
 }
 #main {
+	position: relative;
 	font-size: 60px;
 	font-weight: bold;
 	text-align: center;
