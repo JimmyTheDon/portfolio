@@ -4,17 +4,18 @@ var xpos, ypos, xspeed, yspeed;
 var w = 300;
 var h = 300;
 
-function J() {
+var side1 = function(side1) {
+side1.J() = function() {
       var j = "J";
-      this.xpos = random(w/2, w/2);
-      this.ypos = random(h/2, h/2);
+      this.xpos = side1.random(w/2, w/2);
+      this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = random(-0.7, 0.7);
-        this.yspeed = random(-0.7, 0.7);
+        this.xspeed = side1.random(-0.7, 0.7);
+        this.yspeed = side1.random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = random(-2.0, 2.0);
-        this.yspeed = random(-2.0, 2.0);
+        this.xspeed = side1.random(-2.0, 2.0);
+        this.yspeed = side1.random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -34,17 +35,17 @@ function J() {
     }
   }
 
-  function I() {
+side1.I() = function() {
       var i = "I";
-      this.xpos = random(w/2, w/2);
-      this.ypos = random(h/2, h/2);
+      this.xpos = side1.random(w/2, w/2);
+      this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = random(-0.7, 0.7);
-        this.yspeed = random(-0.7, 0.7);
+        this.xspeed = side1.random(-0.7, 0.7);
+        this.yspeed = side1.random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = random(-2.0, 2.0);
-        this.yspeed = random(-2.0, 2.0);
+        this.xspeed = side1.random(-2.0, 2.0);
+        this.yspeed = side1.random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -64,17 +65,17 @@ function J() {
     }
   }
 
-  function M() {
+side1.M() = function() {
       var m = "M";
-      this.xpos = random(w/2, w/2);
-      this.ypos = random(h/2, h/2);
+      this.xpos = side1.random(w/2, w/2);
+      this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = random(-0.7, 0.7);
-        this.yspeed = random(-0.7, 0.7);
+        this.xspeed = side1.random(-0.7, 0.7);
+        this.yspeed = side1.random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = random(-2.0, 2.0);
-        this.yspeed = random(-2.0, 2.0);
+        this.xspeed = side1.random(-2.0, 2.0);
+        this.yspeed = side1.random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -94,17 +95,17 @@ function J() {
     }
   }
 
-  function Y() {
+side1.Y() = function() {
       var y = "Y";
-      this.xpos = random(w/2, w/2);
-      this.ypos = random(h/2, h/2);
+      this.xpos = side1.random(w/2, w/2);
+      this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = random(-0.7, 0.7);
-        this.yspeed = random(-0.7, 0.7);
+        this.xspeed = side1.random(-0.7, 0.7);
+        this.yspeed = side1.random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = random(-2.0, 2.0);
-        this.yspeed = random(-2.0, 2.0);
+        this.xspeed = side1.random(-2.0, 2.0);
+        this.yspeed = side1.random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -124,7 +125,6 @@ function J() {
     }
   }
 
-var side1 = function(side1) {
 
   side1.preload = function() {
     font = side1.loadFont("/portfolio/logo/assets/font.otf");
