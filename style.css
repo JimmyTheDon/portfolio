@@ -14,7 +14,7 @@ body{
 
 .cube {
 	position: relative;
-	top: 200px;
+	top: -50%;
 	width: 300px;
 	transform-style: preserve-3d;
 	margin: 0 auto;
