@@ -144,7 +144,7 @@ var y = "Y";
   }
 
   side1.draw = function() {
-    side1.background(100);
+    side1.background(200);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -307,7 +307,7 @@ var y = "Y";
   }
 
   side2.draw = function() {
-    side2.background(100);
+    side2.background(200);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -459,7 +459,7 @@ var y = "Y";
     lettery = new Y();
   }
   side3.draw = function() {
-    side3.background(100);
+    side3.background(200);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -610,7 +610,7 @@ var y = "Y";
     lettery = new Y();
   }
   side4.draw = function() {
-    side4.background(100);
+    side4.background(200);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -761,7 +761,7 @@ var y = "Y";
     lettery = new Y();
   }
   side5.draw = function() {
-    side5.background(100);
+    side5.background(200);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -912,7 +912,7 @@ var y = "Y";
     lettery = new Y();
   }
   side6.draw = function() {
-    side6.background(100);
+    side6.background(200);
     letterj.display();
     letterj.move();
     letteri.display();
