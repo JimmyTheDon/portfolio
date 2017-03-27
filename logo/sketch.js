@@ -22,7 +22,7 @@ var side1 = function(side1) {
       }
     
     this.display = function() {
-      text(j, this.xpos, this.ypos);
+      side1.text(j, this.xpos, this.ypos);
     }
     this.move = function() {
       this.xpos = this.xpos + this.xspeed;
@@ -51,7 +51,7 @@ var side1 = function(side1) {
       }
     
     this.display = function() {
-      text(i, this.xpos, this.ypos);
+      side1.text(i, this.xpos, this.ypos);
     }
     this.move = function() {
       this.xpos = this.xpos + this.xspeed;
@@ -80,7 +80,7 @@ var side1 = function(side1) {
       }
     
     this.display = function() {
-      text(m, this.xpos, this.ypos);
+      side1.text(m, this.xpos, this.ypos);
     }
     this.move = function() {
       this.xpos = this.xpos + this.xspeed;
@@ -109,7 +109,7 @@ var side1 = function(side1) {
       }
     
     this.display = function() {
-      text(y, this.xpos, this.ypos);
+      side1.text(y, this.xpos, this.ypos);
     }
     this.move = function() {
       this.xpos = this.xpos + this.xspeed;
