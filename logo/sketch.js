@@ -6,15 +6,15 @@ var h = 300;
 
 function J() {
       var j = "J";
-      this.xpos = this.random(w/2, w/2);
-      this.ypos = this.random(h/2, h/2);
+      this.xpos = random(w/2, w/2);
+      this.ypos = random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = this.random(-0.7, 0.7);
-        this.yspeed = this.random(-0.7, 0.7);
+        this.xspeed = random(-0.7, 0.7);
+        this.yspeed = random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = this.random(-2.0, 2.0);
-        this.yspeed = this.random(-2.0, 2.0);
+        this.xspeed = random(-2.0, 2.0);
+        this.yspeed = random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -36,15 +36,15 @@ function J() {
 
   function I() {
       var i = "I";
-      this.xpos = this.random(w/2, w/2);
-      this.ypos = this.random(h/2, h/2);
+      this.xpos = random(w/2, w/2);
+      this.ypos = random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = this.random(-0.7, 0.7);
-        this.yspeed = this.random(-0.7, 0.7);
+        this.xspeed = random(-0.7, 0.7);
+        this.yspeed = random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = this.random(-2.0, 2.0);
-        this.yspeed = this.random(-2.0, 2.0);
+        this.xspeed = random(-2.0, 2.0);
+        this.yspeed = random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -66,15 +66,15 @@ function J() {
 
   function M() {
       var m = "M";
-      this.xpos = this.random(w/2, w/2);
-      this.ypos = this.random(h/2, h/2);
+      this.xpos = random(w/2, w/2);
+      this.ypos = random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = this.random(-0.7, 0.7);
-        this.yspeed = this.random(-0.7, 0.7);
+        this.xspeed = random(-0.7, 0.7);
+        this.yspeed = random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = this.random(-2.0, 2.0);
-        this.yspeed = this.random(-2.0, 2.0);
+        this.xspeed = random(-2.0, 2.0);
+        this.yspeed = random(-2.0, 2.0);
       }
     
     this.display = function() {
@@ -96,15 +96,15 @@ function J() {
 
   function Y() {
       var y = "Y";
-      this.xpos = this.random(w/2, w/2);
-      this.ypos = this.random(h/2, h/2);
+      this.xpos = random(w/2, w/2);
+      this.ypos = random(h/2, h/2);
       if (w < 600) {
-        this.xspeed = this.random(-0.7, 0.7);
-        this.yspeed = this.random(-0.7, 0.7);
+        this.xspeed = random(-0.7, 0.7);
+        this.yspeed = random(-0.7, 0.7);
       }
       else if (w >= 600) {
-        this.xspeed = this.random(-2.0, 2.0);
-        this.yspeed = this.random(-2.0, 2.0);
+        this.xspeed = random(-2.0, 2.0);
+        this.yspeed = random(-2.0, 2.0);
       }
     
     this.display = function() {
