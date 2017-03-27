@@ -33,8 +33,8 @@ var side1 = function(side1) {
     if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
         this.yspeed = this.yspeed * -1;
       }
-      this.ypos = constrain(this.ypos, h/7, h-(h/5));
-      this.xpos = constrain(this.xpos, w/6, w-(w/6));
+      this.ypos = side1.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side1.constrain(this.xpos, w/6, w-(w/6));
     }
   }
 
@@ -62,8 +62,8 @@ var side1 = function(side1) {
     if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
         this.yspeed = this.yspeed * -1;
       }
-      this.ypos = constrain(this.ypos, h/7, h-(h/5));
-      this.xpos = constrain(this.xpos, w/6, w-(w/6));
+      this.ypos = side1.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side1.constrain(this.xpos, w/6, w-(w/6));
     }
   }
 
@@ -91,8 +91,8 @@ var side1 = function(side1) {
     if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
         this.yspeed = this.yspeed * -1;
       }
-      this.ypos = constrain(this.ypos, h/7, h-(h/5));
-      this.xpos = constrain(this.xpos, w/6, w-(w/6));
+      this.ypos = side1.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side1.constrain(this.xpos, w/6, w-(w/6));
     }
   }
 
@@ -120,8 +120,8 @@ var side1 = function(side1) {
     if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
         this.yspeed = this.yspeed * -1;
       }
-      this.ypos = constrain(this.ypos, h/7, h-(h/5));
-      this.xpos = constrain(this.xpos, w/6, w-(w/6));
+      this.ypos = side1.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side1.constrain(this.xpos, w/6, w-(w/6));
     }
   }
 
