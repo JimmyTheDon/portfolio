@@ -344,8 +344,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side3.random(-2.0, 2.0);
         this.yspeed = side3.random(-2.0, 2.0);
-      }
-    
+      }    
     this.display = function() {
       side3.text(j, this.xpos, this.ypos);
     }
@@ -362,7 +361,6 @@ var y = "Y";
       this.xpos = side3.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
   function I() {
       this.xpos = side3.random(w/2, w/2);
       this.ypos = side3.random(h/2, h/2);
@@ -373,8 +371,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side3.random(-2.0, 2.0);
         this.yspeed = side3.random(-2.0, 2.0);
-      }
-    
+      }   
     this.display = function() {
       side3.text(i, this.xpos, this.ypos);
     }
@@ -391,7 +388,6 @@ var y = "Y";
       this.xpos = side3.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
   function M() {
       this.xpos = side3.random(w/2, w/2);
       this.ypos = side3.random(h/2, h/2);
@@ -402,8 +398,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side3.random(-2.0, 2.0);
         this.yspeed = side3.random(-2.0, 2.0);
-      }
-    
+      }  
     this.display = function() {
       side3.text(m, this.xpos, this.ypos);
     }
@@ -420,7 +415,6 @@ var y = "Y";
       this.xpos = side3.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
   function Y() {
       this.xpos = side3.random(w/2, w/2);
       this.ypos = side3.random(h/2, h/2);
@@ -431,8 +425,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side3.random(-2.0, 2.0);
         this.yspeed = side3.random(-2.0, 2.0);
-      }
-    
+      }   
     this.display = function() {
       side3.text(y, this.xpos, this.ypos);
     }
@@ -449,12 +442,9 @@ var y = "Y";
       this.xpos = side3.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
-
   side3.preload = function() {
     font = side3.loadFont("/portfolio/logo/assets/font.otf");
   }
-
   side3.setup = function() {
     var side3parent = side3.createCanvas(300,300);
     side3parent.parent("back");
@@ -468,7 +458,6 @@ var y = "Y";
     letterm2 = new M();
     lettery = new Y();
   }
-
   side3.draw = function() {
     side3.background(255);
     letterj.display();
@@ -480,13 +469,12 @@ var y = "Y";
     letterm2.display();
     letterm2.move();
     lettery.display();
-    lettery.move();
-    
+    lettery.move();    
   }
 }
 var myp5 = new p5(side3);
 
-
+//right
 var side4 = function(side4) {
 var font;
 var letterj, letteri, letterm1, letterm2, lettery;
@@ -507,8 +495,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side4.random(-2.0, 2.0);
         this.yspeed = side4.random(-2.0, 2.0);
-      }
-    
+      }    
     this.display = function() {
       side4.text(j, this.xpos, this.ypos);
     }
@@ -525,7 +512,6 @@ var y = "Y";
       this.xpos = side4.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
   function I() {
       this.xpos = side4.random(w/2, w/2);
       this.ypos = side4.random(h/2, h/2);
@@ -536,8 +522,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side4.random(-2.0, 2.0);
         this.yspeed = side4.random(-2.0, 2.0);
-      }
-    
+      }    
     this.display = function() {
       side4.text(i, this.xpos, this.ypos);
     }
@@ -554,7 +539,6 @@ var y = "Y";
       this.xpos = side4.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
   function M() {
       this.xpos = side4.random(w/2, w/2);
       this.ypos = side4.random(h/2, h/2);
@@ -565,8 +549,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side4.random(-2.0, 2.0);
         this.yspeed = side4.random(-2.0, 2.0);
-      }
-    
+      }    
     this.display = function() {
       side4.text(m, this.xpos, this.ypos);
     }
@@ -583,7 +566,6 @@ var y = "Y";
       this.xpos = side4.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
   function Y() {
       this.xpos = side4.random(w/2, w/2);
       this.ypos = side4.random(h/2, h/2);
@@ -594,8 +576,7 @@ var y = "Y";
       else if (w >= 600) {
         this.xspeed = side4.random(-2.0, 2.0);
         this.yspeed = side4.random(-2.0, 2.0);
-      }
-    
+      }    
     this.display = function() {
       side4.text(y, this.xpos, this.ypos);
     }
@@ -612,12 +593,9 @@ var y = "Y";
       this.xpos = side4.constrain(this.xpos, w/6, w-(w/6));
     }
   }
-
-
   side4.preload = function() {
     font = side4.loadFont("/portfolio/logo/assets/font.otf");
   }
-
   side4.setup = function() {
     var side4parent = side4.createCanvas(300,300);
     side4parent.parent("right");
@@ -631,7 +609,6 @@ var y = "Y";
     letterm2 = new M();
     lettery = new Y();
   }
-
   side4.draw = function() {
     side4.background(255);
     letterj.display();
@@ -643,8 +620,309 @@ var y = "Y";
     letterm2.display();
     letterm2.move();
     lettery.display();
-    lettery.move();
-    
+    lettery.move();    
   }
 }
 var myp5 = new p5(side4);
+
+//top
+var side5 = function(side5) {
+var font;
+var letterj, letteri, letterm1, letterm2, lettery;
+var xpos, ypos, xspeed, yspeed;
+var w = 300;
+var h = 300;
+var j = "J";
+var i = "I";
+var m = "M";
+var y = "Y";
+  function J() {
+      this.xpos = side5.random(w/2, w/2);
+      this.ypos = side5.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side5.random(-0.7, 0.7);
+        this.yspeed = side5.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side5.random(-2.0, 2.0);
+        this.yspeed = side5.random(-2.0, 2.0);
+      }   
+    this.display = function() {
+      side5.text(j, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side5.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side5.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  function I() {
+      this.xpos = side5.random(w/2, w/2);
+      this.ypos = side5.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side5.random(-0.7, 0.7);
+        this.yspeed = side5.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side5.random(-2.0, 2.0);
+        this.yspeed = side5.random(-2.0, 2.0);
+      }    
+    this.display = function() {
+      side5.text(i, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side5.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side5.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  function M() {
+      this.xpos = side5.random(w/2, w/2);
+      this.ypos = side5.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side5.random(-0.7, 0.7);
+        this.yspeed = side5.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side5.random(-2.0, 2.0);
+        this.yspeed = side5.random(-2.0, 2.0);
+      }    
+    this.display = function() {
+      side5.text(m, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side5.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side5.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  function Y() {
+      this.xpos = side5.random(w/2, w/2);
+      this.ypos = side5.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side5.random(-0.7, 0.7);
+        this.yspeed = side5.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side5.random(-2.0, 2.0);
+        this.yspeed = side5.random(-2.0, 2.0);
+      }    
+    this.display = function() {
+      side5.text(y, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side5.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side5.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  side5.preload = function() {
+    font = side5.loadFont("/portfolio/logo/assets/font.otf");
+  }
+  side5.setup = function() {
+    var side5parent = side5.createCanvas(300,300);
+    side5parent.parent("top");
+    side5.textFont(font);
+    side5.textSize(w/3);
+    side5.fill(0);
+    side5.textAlign(side5.CENTER,side5.CENTER);
+    letterj = new J();
+    letteri = new I();
+    letterm1 = new M();
+    letterm2 = new M();
+    lettery = new Y();
+  }
+  side5.draw = function() {
+    side5.background(255);
+    letterj.display();
+    letterj.move();
+    letteri.display();
+    letteri.move();
+    letterm1.display();
+    letterm1.move();
+    letterm2.display();
+    letterm2.move();
+    lettery.display();
+    lettery.move();
+  }
+}
+var myp5 = new p5(side5);
+
+//bottom
+var side6 = function(side6) {
+var font;
+var letterj, letteri, letterm1, letterm2, lettery;
+var xpos, ypos, xspeed, yspeed;
+var w = 300;
+var h = 300;
+var j = "J";
+var i = "I";
+var m = "M";
+var y = "Y";
+  function J() {
+      this.xpos = side6.random(w/2, w/2);
+      this.ypos = side6.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side6.random(-0.7, 0.7);
+        this.yspeed = side6.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side6.random(-2.0, 2.0);
+        this.yspeed = side6.random(-2.0, 2.0);
+      }
+    this.display = function() {
+      side6.text(j, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side6.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side6.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  function I() {
+      this.xpos = side6.random(w/2, w/2);
+      this.ypos = side6.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side6.random(-0.7, 0.7);
+        this.yspeed = side6.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side6.random(-2.0, 2.0);
+        this.yspeed = side6.random(-2.0, 2.0);
+      }
+    this.display = function() {
+      side6.text(i, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side6.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side6.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  function M() {
+      this.xpos = side6.random(w/2, w/2);
+      this.ypos = side6.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side6.random(-0.7, 0.7);
+        this.yspeed = side6.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side6.random(-2.0, 2.0);
+        this.yspeed = side6.random(-2.0, 2.0);
+      }
+    this.display = function() {
+      side6.text(m, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side6.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side6.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  function Y() {
+      this.xpos = side6.random(w/2, w/2);
+      this.ypos = side6.random(h/2, h/2);
+      if (w < 600) {
+        this.xspeed = side6.random(-0.7, 0.7);
+        this.yspeed = side6.random(-0.7, 0.7);
+      }
+      else if (w >= 600) {
+        this.xspeed = side6.random(-2.0, 2.0);
+        this.yspeed = side6.random(-2.0, 2.0);
+      }
+    this.display = function() {
+      side6.text(y, this.xpos, this.ypos);
+    }
+    this.move = function() {
+      this.xpos = this.xpos + this.xspeed;
+    if (this.xpos  <= w/6 || this.xpos >= w-(w/6)) {
+        this.xspeed = this.xspeed * -1;
+      }
+      this.ypos = this.ypos + this.yspeed;
+    if (this.ypos <= h/7 || this.ypos >= h-(h/5)) {
+        this.yspeed = this.yspeed * -1;
+      }
+      this.ypos = side6.constrain(this.ypos, h/7, h-(h/5));
+      this.xpos = side6.constrain(this.xpos, w/6, w-(w/6));
+    }
+  }
+  side6.preload = function() {
+    font = side6.loadFont("/portfolio/logo/assets/font.otf");
+  }
+  side6.setup = function() {
+    var side6parent = side6.createCanvas(300,300);
+    side6parent.parent("bottom");
+    side6.textFont(font);
+    side6.textSize(w/3);
+    side6.fill(0);
+    side6.textAlign(side6.CENTER,side6.CENTER);
+    letterj = new J();
+    letteri = new I();
+    letterm1 = new M();
+    letterm2 = new M();
+    lettery = new Y();
+  }
+  side6.draw = function() {
+    side6.background(255);
+    letterj.display();
+    letterj.move();
+    letteri.display();
+    letteri.move();
+    letterm1.display();
+    letterm1.move();
+    letterm2.display();
+    letterm2.move();
+    lettery.display();
+    lettery.move();
+  }
+}
+var myp5 = new p5(side6);
