@@ -4,7 +4,7 @@ var mouse = function(mouse){
         var r,g,b;
         mouse.setup = function() {
           var mouseparent = mouse.createCanvas(mouse.windowWidth, mouse.windowHeight);
-          mouseparent.parent("fullpage");
+          mouseparent.parent("html");
           mouse.noCursor();
           mouse.background(255);
         }
