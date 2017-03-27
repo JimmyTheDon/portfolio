@@ -3,10 +3,13 @@ var letterj, letteri, letterm1, letterm2, lettery;
 var xpos, ypos, xspeed, yspeed;
 var w = 300;
 var h = 300;
+var j = "J";
+var i = "I";
+var m = "M";
+var y = "Y";
 
 var side1 = function(side1) {
-side1.J() = function() {
-      var j = "J";
+  function J() {
       this.xpos = side1.random(w/2, w/2);
       this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
@@ -35,8 +38,7 @@ side1.J() = function() {
     }
   }
 
-side1.I() = function() {
-      var i = "I";
+  function I() {
       this.xpos = side1.random(w/2, w/2);
       this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
@@ -65,8 +67,7 @@ side1.I() = function() {
     }
   }
 
-side1.M() = function() {
-      var m = "M";
+  function M() {
       this.xpos = side1.random(w/2, w/2);
       this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
@@ -95,8 +96,7 @@ side1.M() = function() {
     }
   }
 
-side1.Y() = function() {
-      var y = "Y";
+  function Y() {
       this.xpos = side1.random(w/2, w/2);
       this.ypos = side1.random(h/2, h/2);
       if (w < 600) {
