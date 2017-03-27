@@ -1,3 +1,4 @@
+var side1 = function(side1) {
 var font;
 var letterj, letteri, letterm1, letterm2, lettery;
 var xpos, ypos, xspeed, yspeed;
@@ -7,8 +8,6 @@ var j = "J";
 var i = "I";
 var m = "M";
 var y = "Y";
-
-var side1 = function(side1) {
   function J() {
       this.xpos = side1.random(w/2, w/2);
       this.ypos = side1.random(h/2, h/2);
