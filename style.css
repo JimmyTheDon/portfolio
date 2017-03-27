@@ -78,26 +78,26 @@ body{
 }
 
 #back {
-	transform: translateZ(-150px) rotateY(180deg);
+	transform: translateZ(-149px) rotateY(180deg);
 }
 #right {
-	transform: rotateY(-270deg) translateX(150px);
+	transform: rotateY(-270deg) translateX(149px);
 	transform-origin: top right;
 }
 #left {
-	transform: rotateY(270deg) translateX(-150px);
+	transform: rotateY(270deg) translateX(-149px);
 	transform-origin: center left;
 }
 #top {
-	transform: rotateX(-90deg) translateY(-150px);
+	transform: rotateX(-90deg) translateY(-149px);
 	transform-origin: top center;
 }
 #bottom {
-	transform: rotateX(90deg) translateY(150px);
+	transform: rotateX(90deg) translateY(149px);
 	transform-origin: bottom center;
 }
 #front {
-	transform: translateZ(150px);
+	transform: translateZ(149px);
 }
 
 @keyframes spin {
