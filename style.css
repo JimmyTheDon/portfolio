@@ -24,37 +24,32 @@ body{
 	position: absolute;
 	width: 300px;
 	height: 300px;
-	opacity: 0.5;
+	opacity: 0.75;
 	border: 1em;
+	border-color: black;
 }
 
 #back {
 	transform: translateZ(-150px) rotateY(180deg);
-	background: blue;
 }
 #right {
 	transform: rotateY(-270deg) translateX(150px);
 	transform-origin: top right;
-	background: red;
 }
 #left {
 	transform: rotateY(270deg) translateX(-150px);
 	transform-origin: center left;
-	background: lavender;
 }
 #top {
 	transform: rotateX(-90deg) translateY(-150px);
 	transform-origin: top center;
-	background: green;
 }
 #bottom {
 	transform: rotateX(90deg) translateY(150px);
 	transform-origin: bottom center;
-	background: black;
 }
 #front {
 	transform: translateZ(150px);
-	background: orange;
 }
 
 @keyframes spin {
