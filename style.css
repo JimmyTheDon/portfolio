@@ -9,12 +9,12 @@ body{
 .wrap {
 	position: relative;
 	perspective: 1200px;
-	perspective-origin: 50% 300px;
+	perspective-origin: 50% 50px;
 	}
 
 .cube {
 	position: relative;
-	top: -50%;
+	top: -200px;
 	width: 300px;
 	transform-style: preserve-3d;
 	margin: 0 auto;
