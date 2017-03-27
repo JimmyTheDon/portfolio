@@ -64,7 +64,7 @@ body{
 
 .cube {
 	position: relative;
-	top: -200px;
+	top: -175px;
 	width: 300px;
 	transform-style: preserve-3d;
 	margin: 0 auto;
@@ -106,7 +106,7 @@ body{
 }
 
 .cube {
-	animation: spin 10s infinite linear;
+	animation: spin 15s infinite linear;
 }
 #main {
 	position: relative;
