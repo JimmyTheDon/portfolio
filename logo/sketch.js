@@ -144,7 +144,7 @@ var y = "Y";
   }
 
   side1.draw = function() {
-    side1.background(255);
+    side1.background(255,0);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -307,7 +307,7 @@ var y = "Y";
   }
 
   side2.draw = function() {
-    side2.background(255);
+    side2.background(255,0);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -459,7 +459,7 @@ var y = "Y";
     lettery = new Y();
   }
   side3.draw = function() {
-    side3.background(255);
+    side3.background(255,0);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -610,7 +610,7 @@ var y = "Y";
     lettery = new Y();
   }
   side4.draw = function() {
-    side4.background(255);
+    side4.background(255,0);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -761,7 +761,7 @@ var y = "Y";
     lettery = new Y();
   }
   side5.draw = function() {
-    side5.background(255);
+    side5.background(255,0);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -912,7 +912,7 @@ var y = "Y";
     lettery = new Y();
   }
   side6.draw = function() {
-    side6.background(255);
+    side6.background(255,0);
     letterj.display();
     letterj.move();
     letteri.display();
@@ -935,7 +935,7 @@ var mouse = function(mouse){
           var mouseparent = mouse.createCanvas(mouse.windowWidth, mouse.windowHeight);
           mouseparent.parent("fullpage");
           mouse.noCursor();
-          mouse.background(255);
+          mouse.background(255,0);
         }
         mouse.draw = function() {
           r=mouse.map(mouse.mouseX,0,mouse.windowWidth,0,255);
