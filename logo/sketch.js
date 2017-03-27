@@ -933,7 +933,7 @@ var mouse = function(mouse){
         var r,g,b;
         mouse.setup = function() {
           var mouseparent = mouse.createCanvas(mouse.windowWidth, mouse.windowHeight);
-          mouseparent.parent("body");
+          mouseparent.parent("fullpage");
           mouse.noCursor();
           mouse.background(255);
         }
