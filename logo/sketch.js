@@ -1,4 +1,4 @@
-var mouse = function(mouse){
+/*var mouse = function(mouse){
         var xoff = 255.0;
         var xincrement = 0.01;
         var r,g,b;
@@ -32,18 +32,18 @@ var mouse = function(mouse){
           mouse.endShape(mouse.CLOSE);
           mouse.strokeWeight(5);
           mouse.stroke(mouse.random(0,255),20);
-          /*beginShape();
+          beginShape();
           for(var x=50; x<=windowWidth-50;x+=15) {
               var modx=random(0-(windowHeight/10),windowHeight/10);
               vertex(x,(windowHeight/2)+modx);
           }
-          endShape();*/
+          endShape();
         }
         mouse.windowResized = function() {
           mouse.resizeCanvas(mouse.windowWidth, mouse.windowHeight);
         }
 }
-var myp5 = new p5(mouse);
+var myp5 = new p5(mouse);*/
 
 var side1 = function(side1) {
 var font;
