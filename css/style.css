@@ -72,7 +72,6 @@ abbr,acronym { border: 0;
 @font-face {
 	font-family: Title;
 	src: url("img/logotype/test3.otf");
-	src: url("img/logotype/test3.woff");
 }
 body{
 	width: 100%;
