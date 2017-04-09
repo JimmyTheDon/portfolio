@@ -78,11 +78,8 @@ abbr,acronym { border: 0;
 body{
 	width: 100%;
 }
-p {
+h1,p {
 	font-family: 'Space Mono', monospace;
-}
-h1 {
-	font-family: 'Custom', 'Space Mono', monospace;
 }
 .wrap {
 	position: relative;
@@ -137,9 +134,10 @@ h1 {
 	animation: spin 15s infinite linear;
 }
 #main {
+	font-family: 'Custom', 'Space Mono', monospace;
 	position: relative;
 	padding-top: 200px;
-	font-size: 60px;
+	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
 }
