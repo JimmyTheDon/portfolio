@@ -141,6 +141,25 @@ h1,p {
 	font-weight: bold;
 	text-align: center;
 }
+.arrowdown {
+	position: relative;
+	margin: auto;
+	color: #D1D4D4;
+	padding-top: 300px;
+	text-align: center;
+}
+.arrowdown p {
+	padding-bottom: 10px;
+}
+#down{
+	position: relative;
+  	width: 0; 
+  	height: 0; 
+  	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-top: 10px solid #D1D4D4;
+  	margin: 0 auto;
+}
 #content {
 	width: 80%;
 	float: left;
