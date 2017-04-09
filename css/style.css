@@ -68,14 +68,19 @@ abbr,acronym { border: 0;
     font-family: Logo;
     src: url("logo/assets/font.otf");
     src: url("logo/assets/font.woff");
-}
+}*/
 @font-face {
 	font-family: Title;
 	src: url("img/logotype/test3.otf");
-}*/
+}
 body{
 	width: 100%;
+}
+p {
 	font-family: 'Space Mono', monospace;
+}
+h1 {
+	font-family: 'Title', 'Space Mono', monospace;
 }
 .wrap {
 	position: relative;
