@@ -79,7 +79,7 @@ body{
 	font-family: 'Space Mono', monospace;
 }
 h1{
-	font-family: 'Title';
+	font-family: 'Title','Space Mono',monospace;
 }
 .wrap {
 	position: relative;
