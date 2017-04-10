@@ -89,7 +89,7 @@ h1,p {
 
 .cube {
 	position: relative;
-	top: -125px;
+	top: -75px;
 	width: 300px;
 	transform-style: preserve-3d;
 	margin: 0 auto;
