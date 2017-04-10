@@ -140,6 +140,7 @@ h1,p {
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
+	color: #000;
 }
 .arrowdown {
 	position: relative;
@@ -159,6 +160,25 @@ h1,p {
   	border-right: 10px solid transparent;
   	border-top: 10px solid #D1D4D4;
   	margin: 0 auto;
+}
+.titles {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.titles a {
+	position: relative;
+	font-family: 'Custom','Space Mono',monospace; 
+	text-align: center;
+	padding: 20px;
+	color: #000;
+	font-size: .6em;
+	background-color: #D1D4D4;
+	opacity: .75;
+}
+.titles a:hover {
+	background-color: #E5E8E8;
 }
 #content {
 	width: 80%;
