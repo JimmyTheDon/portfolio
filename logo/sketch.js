@@ -173,7 +173,7 @@ var y = "Y";
 
 
   side1.preload = function() {
-    font = side1.loadFont("assets/font.otf");
+    font = side1.loadFont("logo/assets/font.otf");
   }
 
   side1.setup = function() {
@@ -336,7 +336,7 @@ var y = "Y";
 
 
   side2.preload = function() {
-    font = side2.loadFont("assets/font.otf");
+    font = side2.loadFont("logo/assets/font.otf");
   }
 
   side2.setup = function() {
@@ -490,7 +490,7 @@ var y = "Y";
     }
   }
   side3.preload = function() {
-    font = side3.loadFont("assets/font.otf");
+    font = side3.loadFont("logo/assets/font.otf");
   }
   side3.setup = function() {
     var side3parent = side3.createCanvas(300,300);
@@ -641,7 +641,7 @@ var y = "Y";
     }
   }
   side4.preload = function() {
-    font = side4.loadFont("assets/font.otf");
+    font = side4.loadFont("logo/assets/font.otf");
   }
   side4.setup = function() {
     var side4parent = side4.createCanvas(300,300);
@@ -792,7 +792,7 @@ var y = "Y";
     }
   }
   side5.preload = function() {
-    font = side5.loadFont("assets/font.otf");
+    font = side5.loadFont("logo/assets/font.otf");
   }
   side5.setup = function() {
     var side5parent = side5.createCanvas(300,300);
@@ -943,7 +943,7 @@ var y = "Y";
     }
   }
   side6.preload = function() {
-    font = side6.loadFont("assets/font.otf");
+    font = side6.loadFont("logo/assets/font.otf");
   }
   side6.setup = function() {
     var side6parent = side6.createCanvas(300,300);
