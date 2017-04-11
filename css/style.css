@@ -167,7 +167,7 @@ h1,p {
 .slide{
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 100%;
+	background-size: cover;
 }
 .titles {
 	position: relative;
@@ -190,11 +190,11 @@ h1,p {
 	color: #C80000;
 }
 #content {
-	width: 40%;
+	width: 750px;
 	padding: 0 10% 0 10%;
 	margin: auto;
 	color: #000;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 #description {
 	width: 48.5%;
@@ -205,9 +205,4 @@ h1,p {
 	width: 48.5%;
 	float: left;
 	margin-left: 1.5%;
-}
-@media screen and (max-width: 1390px) {
-	.slide{
-		background-size: 200%; 
-	}
 }
