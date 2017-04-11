@@ -62,7 +62,7 @@ abbr,acronym { border: 0;
         color: white;
     }
 
-/* Custom CSS
+/* Some Custom CSS & Cube
  * --------------------------------------- */
 /*@font-face {
     font-family: Logo;
@@ -133,15 +133,18 @@ h1,p {
 .cube {
 	animation: spin 15s infinite linear;
 }
+/* Custom CSS
+ * --------------------------------------- */
 #main {
 	font-family: 'Custom', 'Space Mono', monospace;
 	position: relative;
 	padding-top: 300px;
-	font-size: 20px;
+	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
 	color: #000; 
 }
+/*
 .arrowdown {
 	position: relative;
 	margin: auto;
@@ -160,6 +163,11 @@ h1,p {
   	border-right: 10px solid transparent;
   	border-top: 10px solid #D1D4D4;
   	margin: 0 auto;
+}*/
+.slide{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
 }
 .titles {
 	position: relative;
@@ -173,7 +181,7 @@ h1,p {
 	text-align: center;
 	padding: 20px;
 	color: #000;
-	font-size: .6em;
+	font-size: .8em;
 	background-color: #D1D4D4;
 	opacity: .85;
 }
@@ -182,11 +190,11 @@ h1,p {
 	color: #C80000;
 }
 #content {
-	width: 80%;
-	float: left;
+	width: 40%;
 	padding: 0 10% 0 10%;
 	margin: auto;
-	margin-top: -115px;
+	color: #000;
+	font-size: 1.3em;
 }
 #description {
 	width: 48.5%;
@@ -197,4 +205,9 @@ h1,p {
 	width: 48.5%;
 	float: left;
 	margin-left: 1.5%;
+}
+@media screen and (max-width: 1390px) {
+	.slide{
+		background-size: 200%; 
+	}
 }
