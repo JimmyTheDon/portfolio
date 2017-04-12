@@ -15,7 +15,7 @@
     color: white;
 
     position: absolute;
-    top: 50%;
+    top: 47%;
 
     display: block;
 
@@ -71,7 +71,8 @@
 
 .slick-prev
 {
-    left: -50px;
+    left: -80px;
+    margin-top: -20;
 }
 [dir='rtl'] .slick-prev
 {
@@ -80,11 +81,13 @@
 }
 .slick-prev:before
 {
-    content: '\25C0';
+    content: '❮';
+    font-size: 100px;
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '\25B6';
+    content: '❯';
+    font-size: 100px;
 }
 
 .slick-next
@@ -98,11 +101,13 @@
 }
 .slick-next:before
 {
-    content: '\25B6';
+    content: '❯';
+    font-size: 100px;
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '\25C0';
+    content: '❮';
+    font-size: 100px;
 }
 
 /* Dots */
