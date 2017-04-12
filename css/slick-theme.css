@@ -15,7 +15,7 @@
     color: white;
 
     position: absolute;
-    top: 47%;
+    top: 45%;
 
     display: block;
 
@@ -72,7 +72,6 @@
 .slick-prev
 {
     left: -80px;
-    margin-top: -20;
 }
 [dir='rtl'] .slick-prev
 {
