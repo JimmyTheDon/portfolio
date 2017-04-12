@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jimmy Don Design</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jimmy Don Design</title>
+	<meta name="author" content="Jimmy Don" />
+	<meta name="description" content="design portfolio" />
+	<meta name="keywords"  content="design,graphic,portfolio,cool" />
+	<meta name="Resource-type" content="Document" />
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#fff']
+			});
+			$('#checkbox').change(function(){
+				setInterval(function () {
+					moveRight();
+				}, 3000);
+			});
+		});
+	</script>
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+			$(".regular").slick({
+				dots: false,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+			$(".center").slick({
+				dots: true,
+				infinite: true,
+				centerMode: true,
+				slidesToShow: 3,
+				slidesToScroll: 3
+			});
+			$(".variable").slick({
+				dots: true,
+				infinite: true,
+				variableWidth: true
+			});
+			$(".lazy").slick({
+	        lazyLoad: 'ondemand', // ondemand progressive anticipated
+	        infinite: true
+	    });
+		});
+	</script>
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section active" id="section0" style="background-image: url(img/typeimage/hero2.gif); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+			<div class="bars">TYPE AS IMAGE</div>
+		</div>
+		<div class="section" id="section1">
+			<p id="content">
+				As a continuation of the "Letter as Image" exploration, this experiment b...
+			</p>
+		</div>
+		<div class="section" id="section2" style="background-image: url(img/typeimage/process1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		<div class="section" id="section3" style="background-image: url(img/typeimage/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		<div class="section" id="section4" style="background-image: url(img/typeimage/process2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		<div class="section" id="section5">
+			<section class="regular slider" style="width: 50%; margin: auto;">
+				<div>
+					<img src="img/typeimage/typophoto-01.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-02.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-03.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-04.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-05.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-06.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-07.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-08.jpg">
+				</div>
+				<div>
+					<img src="img/typeimage/typophoto-09.jpg">
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

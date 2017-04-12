@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jimmy Don Design</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jimmy Don Design</title>
+<meta name="author" content="Jimmy Don" />
+<meta name="description" content="design portfolio" />
+<meta name="keywords"  content="design,graphic,portfolio,cool" />
+<meta name="Resource-type" content="Document" />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			sectionsColor: ['#fff']
+		});
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
+		});
+	});
+</script>
+<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).on('ready', function() {
+		$(".regular").slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1
+		});
+		$(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 3,
+			slidesToScroll: 3
+		});
+		$(".variable").slick({
+			dots: true,
+			infinite: true,
+			variableWidth: true
+		});
+		$(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+    });
+	});
+</script>
+</head>
+<body>
+<div id="fullpage">
+	<div class="section active" id="section0" style="background-image: url(img/seeker/hero2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+		<div class="bars">SEEKERS</div>
+	</div>
+	<div class="section" id="section1">
+		<p id="content">
+			Description...
+		</p>
+	</div>
+	<div class="section" id="section2" style="background-color: #000;">
+		<img src="img/seeker/logo_animation2.gif" style=" width: 70%; position: relative; padding: 0 15% 0 15%;">
+	</div>
+	<div class="section" id="section2">
+		<h1 style="text-align: center; font-family: 'Custom', 'Space Mono', monospace; font-size: .8em;">
+        	MANIFESTO
+      	</h1>
+      	<br>
+		<p id="content">
+			We ask the questions and confront the status quo many are too afraid to ask. Their failure to ask keeps them safe and secure from fear of reality. However, it leaves them susceptible to greater evils to be taken advantage of. We seek to enlighten the blind sheep they have all become and reveal the hidden workings of these cabals that seek to rule over us. We remain vigilant against this global arch-society, and seek to challenge the verity of what is fed to us through mainstream media that many have blindly stumbled into. Our tenacity will expose their diabolical secrets and bring to light the occult. We are Seekers!
+		</p>
+	</div>
+	<div class="section" id="section3" style="background-image: url(img/seeker/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+	<div class="section" id="section3" style="background-image: url(img/seeker/mockup.gif); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+	<div class="section" id="section3" style="background-image: url(img/seeker/cryptex1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+	<div class="section" id="section5" style="background-image: url(img/seeker/cryptex2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+</div>
+</body>
+</html>
