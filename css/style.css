@@ -59,7 +59,7 @@ abbr,acronym { border: 0;
 
     .slick-prev:before,
     .slick-next:before {
-        color: white;
+        color: #D1D4D4;
     }
 
 /* Some Custom CSS & Cube

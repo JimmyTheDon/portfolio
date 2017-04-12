@@ -71,7 +71,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -50px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -80,16 +80,16 @@
 }
 .slick-prev:before
 {
-    content: '<';
+    content: '\25C0';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '>';
+    content: '\25B6';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -50px;
 }
 [dir='rtl'] .slick-next
 {
@@ -98,11 +98,11 @@
 }
 .slick-next:before
 {
-    content: '>';
+    content: '\25B6';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '<';
+    content: '\25C0';
 }
 
 /* Dots */
