@@ -144,16 +144,11 @@ abbr,acronym { border: 0;
 	text-align: center;
 	color: #000; 
 }
-  	.slide{
+  	.fp-bg{
   		background-repeat: no-repeat;
   		background-position: center center;
   		background-size: cover;
   	}
-    .fp-bg{
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-    }
   	.titles {
   		position: relative;
   		width: 100%;

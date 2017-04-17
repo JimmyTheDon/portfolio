@@ -30,7 +30,7 @@
         anchors: [' ', 'statement', 'projects', 'about'],
         afterLoad: function(anchorLink){
           if(anchorLink == 'projects'){
-            $("#fp-nav").fadeOut("slow");
+            $("#fp-nav").fadeOut();
           }
           else{
             $("#fp-nav").fadeIn();
@@ -107,31 +107,39 @@
   </div>
   <!-- PROJECTS -->
   <div class="section" id="section2">
-    <div class="slide active" style="background-image: url(img/typeabstract/hero.jpg);">
+    <div class="slide active">
+      <div class="fp-bg" style="background-image: url(img/typeabstract/hero.jpg);"></div>
       <div class="titles"><a href="letter_as_image.html">LETTER AS IMAGE</a></div>
     </div>
-    <div class="slide" style="background-image: url(img/typeimage/hero.jpg);">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/typeimage/hero.jpg);"></div>
       <div class="titles"><a href="type_as_image.html">TYPE AS IMAGE</a></div>
     </div>
-    <div class="slide" style="background-image: url(img/csstype/mock.gif); background-size: 100%">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/csstype/mock.gif);"></div>
       <div class="titles"><a href="typeface_css.html">TYPEFACE PLAYGROUND</a></div>
     </div>
-    <div class="slide" style="background-image: url(img/seeker/hero.jpg);">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/seeker/hero.jpg);"></div>
       <div class="titles"><a href="seekers.html">SEEKERS</a></div>
     </div>
-    <div class="slide" style="background-image: url(img/rentmap/hero.png);">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/rentmap/hero.png);"></div>
       <div class="titles"><a href="transit_rent_map.html">TRANSIT RENT MAP</a></div>
     </div>
-    <div class="slide" style="background-image: url(img/vertigo/hero.jpg);">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/vertigo/hero.jpg);"></div>
       <div class="titles"><a href="vertigo_identity.html">VERTIGO</a></div>
     </div>
     <!--<div class="slide" style="background-image: url(img/quicksand/hero.jpg);">
       <div class="titles"><a href="quicksand_installation.html">QUICKSAND</a></div>
     </div>-->
-    <div class="slide" style="background-image: url(img/book/hero.jpg);">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/book/hero.jpg);"></div>
       <div class="titles"><a href="home_again_book.html">HOME AGAIN</a></div>
     </div>
-    <div class="slide" style="background-image: url(img/screenprint/hero.jpg);">
+    <div class="slide">
+      <div class="fp-bg" style="background-image: url(img/screenprint/hero.jpg);"></div>
       <div class="titles"><a href="screenprint.html">SCREENPRINTS</a></div>
     </div>
     <p style="text-align: center; position: absolute; bottom: 1%; margin: auto; width: 100%; z-index: 100;">
