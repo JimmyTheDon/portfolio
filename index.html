@@ -9,8 +9,8 @@
   <meta name="Resource-type" content="Document" />
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
 
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
@@ -20,11 +20,22 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/scrolloverflow.js"></script>
-  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        sectionsColor: ['#fff']
+        parallax: true,
+        parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
+        anchors: [' ', 'statement', 'projects', 'about'],
+        afterLoad: function(anchorLink){
+          if(anchorLink == 'projects'){
+            $("#fp-nav").fadeOut("slow");
+          }
+          else{
+            $("#fp-nav").fadeIn();
+          }
+        }
       });
       $('#checkbox').change(function(){
         setInterval(function () {
@@ -96,7 +107,7 @@
   </div>
   <!-- PROJECTS -->
   <div class="section" id="section2">
-    <div class="slide active" id="letter" style="background-image: url(img/typeabstract/hero.jpg);">
+    <div class="slide active" style="background-image: url(img/typeabstract/hero.jpg);">
       <div class="titles"><a href="letter_as_image.html">LETTER AS IMAGE</a></div>
     </div>
     <div class="slide" style="background-image: url(img/typeimage/hero.jpg);">
@@ -137,7 +148,7 @@
       </h1>
       <br>
       <p>
-        Hello! I'm Jimmy, an artist and designer based in the Bay Area. Aside from design, my hobbies include photography, tinkering, hiking, and video games.
+        Hello! I'm Jimmy, an artist and designer based in the Bay Area. As an artist and designer, I enjoy pushing myself beyond  Aside from design, my hobbies include photography, tinkering, hiking, and video games.
         <br>
         <br>
         Get in touch with me at <span>info@jimmydon.net</span> and download my resume <span><a href="">here</a></span>.
