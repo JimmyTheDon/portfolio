@@ -42,6 +42,9 @@
           moveRight();
         }, 3000);
       });
+      $('#down1').click(function(){
+        $('html, body, #fullpage').animate({scrollTop: $('#section1').offset().top}, 1000);
+      });
     });
   </script>
   <script src="http://jimmydon.net/logo/libraries/p5.js"></script>
@@ -89,7 +92,7 @@
         </div>
       </div>
       <h1 id="main">JIMMY DON</h1>
-      <p style="text-align: center; position: absolute; bottom: 1%; margin: auto; width: 100%;">
+      <p id="down1" style="text-align: center; position: absolute; bottom: 1%; margin: auto; width: 100%;">
         Scroll
         <br>
         ▼
