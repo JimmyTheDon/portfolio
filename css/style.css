@@ -196,3 +196,43 @@ abbr,acronym { border: 0;
   		float: left;
   		margin-left: 1.5%;
   	}
+    #down {
+      z-index: 3;
+      text-align: center;
+      position: absolute;
+      bottom: 1%;
+      margin: auto; 
+      width: 100%; 
+      background: linear-gradient(180deg, #d1d4d4, transparent);
+      background-size: 800% 800%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      -o-background-clip: text;
+      -o-text-fill-color: transparent;
+      -webkit-animation: AnimationName 6s ease infinite;
+      -moz-animation: AnimationName 6s ease infinite;
+      -o-animation: AnimationName 6s ease infinite;
+      animation: AnimationName 6s ease infinite;
+    }
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
