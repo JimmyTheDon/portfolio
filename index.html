@@ -42,11 +42,6 @@
           moveRight();
         }, 3000);
       });
-      $(".arrowdown1").click(function() {
-        $('html, body').animate({
-          scrollTop: $("#setion1").offset().top
-        }, 2000);
-      });
     });
   </script>
   <script src="http://jimmydon.net/logo/libraries/p5.js"></script>
@@ -94,21 +89,25 @@
         </div>
       </div>
       <h1 id="main">JIMMY DON</h1>
-      <a class="arrowdown1" id="down">
-        Scroll
-        <br>
-        ▼
+      <a href="#statement" id="down">
+        <p>
+          Scroll
+          <br>
+          ▼
+        </p>
       </a>
   </div>
   <div class="section" id="section1">
     <div id="content">
       <p style="font-size: 1.5em">I enjoy exploring ways in which the combination of digital and print can create a synergistic effect, and experimenting in merging analog and digital processes in creating unique approaches.</p>
     </div>
-    <p id="down">
-        Scroll
-        <br>
-        ▼
-    </p>
+    <a href="#projects" id="down">
+        <p>
+          Scroll
+          <br>
+          ▼
+        </p>
+      </a>
   </div>
   <!-- PROJECTS -->
   <div class="section" id="section2">
@@ -147,11 +146,13 @@
       <div class="fp-bg" style="background-image: url(img/screenprint/hero.jpg);"></div>
       <div class="titles"><a href="screenprint.html">SCREENPRINTS</a></div>
     </div>
-    <p id="down">
-        Scroll
-        <br>
-        ▼
-    </p>
+    <a href="#about" id="down">
+        <p>
+          Scroll
+          <br>
+          ▼
+        </p>
+      </a>
   </div>
   <!-- CONTACT -->
   <div class="section" id="section3">
