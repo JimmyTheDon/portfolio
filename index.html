@@ -42,12 +42,17 @@
           moveRight();
         }, 3000);
       });
+      $(".arrowdown1").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#setion1").offset().top
+        }, 2000);
+      });
     });
   </script>
   <script src="http://jimmydon.net/logo/libraries/p5.js"></script>
   <script src="http://jimmydon.net/logo/sketch.js"></script>
   <script src="http://jimmydon.net/js/slick.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     $(document).on('ready', function() {
       $(".regular").slick({
         dots: false,
@@ -72,7 +77,7 @@
         infinite: true
       });
     });
-  </script>
+  </script>-->
 </head>
 <body id="body">
 
@@ -89,7 +94,7 @@
         </div>
       </div>
       <h1 id="main">JIMMY DON</h1>
-      <p id="down">
+      <p class="arrowdown1" id="down">
         Scroll
         <br>
         ▼
@@ -97,7 +102,7 @@
   </div>
   <div class="section" id="section1">
     <div id="content">
-      <p style="font-size: 1.5em">I enjoy exploring ways in which the combination of digital and print can create a synergistic effect, as well as experimenting in merging analog and digital processes in unique ways.</p>
+      <p style="font-size: 1.5em">I enjoy exploring ways in which the combination of digital and print can create a synergistic effect, and experimenting in merging analog and digital processes in creating unique approaches.</p>
     </div>
     <p id="down">
         Scroll
@@ -156,7 +161,7 @@
       </h1>-->
       <br>
       <p style="font-size: 1.5em">
-        Hello! I am Jimmy, an artist and designer based in the Bay Area. As an artist and designer, I enjoy pushing the limits of what I can do. Aside from design, my hobbies include photography, tinkering, hiking, and video games.
+        Hello! I am Jimmy, an artist and designer based in the Bay Area. I enjoy pushing the limits of what I can in my work, always striving for the bizarre and unconventional.  Aside from design, my hobbies include photography, tinkering, hiking, and video games.
         <br>
         <br>
         Get in touch with me at <span>info@jimmydon.net</span> and download my resume <span><a href="">here</a></span>.
