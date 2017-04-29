@@ -31,19 +31,7 @@
 		});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				parallax: true,
-				parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
-			});
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
 	<div class="material-menu-wrapper">
@@ -78,11 +66,21 @@
 					This book is a personal project in which I decided to explore the idea of a home, and what it was to me. The book consists of my personal writing and photography as I explored the 400 block of 40th Street, Oakland, and my new place of residence as of 2015.
 				</p>
 			</div>
-			<div class="section fp-bg" id="section1" style="background-image: url(img/book/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-			<div class="section fp-bg" id="section2" style="background-image: url(img/book/IMG_0066.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-			<div class="section fp-bg" id="section3" style="background-image: url(img/book/IMG_0061.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-			<div class="section fp-bg" id="section4" style="background-image: url(img/book/IMG_0067.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-			<div class="section fp-bg" id="section5" style="background-image: url(img/book/IMG_0068.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+			<div class="section" id="section1">
+				<div class="fp-bg" style="background-image: url(img/book/hero.jpg);"></div>
+			</div>
+			<div class="section" id="section2">
+				<div class="fp-bg" style="background-image: url(img/book/IMG_0066.jpg);"></div>
+			</div>
+			<div class="section" id="section3">
+				<div class="fp-bg" style="background-image: url(img/book/IMG_0061.jpg);"></div>
+			</div>
+			<div class="section" id="section4">
+				<div class="fp-bg" style="background-image: url(img/book/IMG_0067.jpg);"></div>
+			</div>
+			<div class="section" id="section5">
+				<div class="fp-bg" style="background-image: url(img/book/IMG_0068.jpg);"></div>
+			</div>
 		</div>
 	</main>
 	<script type="text/javascript" src="js/nav.js"></script>
