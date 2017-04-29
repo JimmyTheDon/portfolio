@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jimmy Don Design</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Jimmy Don Design</title>
-<meta name="author" content="Jimmy Don" />
-<meta name="description" content="design portfolio" />
-<meta name="keywords"  content="design,graphic,portfolio,cool" />
-<meta name="Resource-type" content="Document" />
-<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+	<title>Jimmy Don Design</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jimmy Don Design</title>
+	<meta name="author" content="Jimmy Don" />
+	<meta name="description" content="design portfolio" />
+	<meta name="keywords"  content="design,graphic,portfolio,cool" />
+	<meta name="Resource-type" content="Document" />
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
 
-<link rel="stylesheet" type="text/css" href="css/slick.css">
-<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/scrolloverflow.js"></script>
-<script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
-<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-			sectionsColor: ['#000']
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['fff']
+			});
 		});
-		$('#checkbox').change(function(){
-			setInterval(function () {
-				moveRight();
-			}, 3000);
+	</script>
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				parallax: true,
+				parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
+				$('#checkbox').change(function(){
+					setInterval(function () {
+						moveRight();
+					}, 3000);
+				});
+			});
 		});
-	});
-</script>
-<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-	$(document).on('ready', function() {
-		$(".regular").slick({
-			dots: false,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1
-		});
-		$(".center").slick({
-			dots: true,
-			infinite: true,
-			centerMode: true,
-			slidesToShow: 3,
-			slidesToScroll: 3
-		});
-		$(".variable").slick({
-			dots: true,
-			infinite: true,
-			variableWidth: true
-		});
-		$(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-    });
-	});
-</script>
+	</script>
 </head>
 <body>
-<div id="fullpage">
-	<div class="section active" id="section0" style="background-image: url(img/book/IMG_0051.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-		<div class="bars" style="background-color: #E5E8E8;">HOME AGAIN</div>
+	<div class="material-menu-wrapper">
+		<div class="material-menu">
+			<div class="material-btn">
+				<div class="material-hamburger">
+					<div class="material-patty"></div>
+					<div class="material-patty"></div>
+					<div class="material-patty"></div>
+				</div>
+			</div>
+			<div class="material-content">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#statement">Statement</a></li>
+						<li><a href="index.html#projects">Projects</a></li>
+						<li><a href="index.html#about">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</div>
-	<div class="section" id="section1">
-		<p id="content">
-			This book is a personal project in which I decided to explore the idea of a home, and what it was to me. The book consists of my personal writing and photography as I explored the 400 block of 40th Street, Oakland, and my new place of residence as of 2015.
-		</p>
-	</div>
-	<div class="section" id="section1" style="background-image: url(img/book/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section2" style="background-image: url(img/book/IMG_0066.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section3" style="background-image: url(img/book/IMG_0061.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section4" style="background-image: url(img/book/IMG_0067.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section5" style="background-image: url(img/book/IMG_0068.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-</div>
+	<main>
+		<div id="fullpage">
+			<div class="section active" id="section0">
+				<div class="fp-bg" style="background-image: url(img/book/IMG_0051.jpg);"></div>
+				<div class="bars" style="background-color: #E5E8E8;">HOME AGAIN</div>
+			</div>
+			<div class="section" id="section1">
+				<p id="content">
+					This book is a personal project in which I decided to explore the idea of a home, and what it was to me. The book consists of my personal writing and photography as I explored the 400 block of 40th Street, Oakland, and my new place of residence as of 2015.
+				</p>
+			</div>
+			<div class="section" id="section1" style="background-image: url(img/book/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+			<div class="section" id="section2" style="background-image: url(img/book/IMG_0066.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+			<div class="section" id="section3" style="background-image: url(img/book/IMG_0061.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+			<div class="section" id="section4" style="background-image: url(img/book/IMG_0067.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+			<div class="section" id="section5" style="background-image: url(img/book/IMG_0068.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		</div>
+	</main>
+	<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
