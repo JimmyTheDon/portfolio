@@ -1,67 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jimmy Don Design</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Jimmy Don Design</title>
-<meta name="author" content="Jimmy Don" />
-<meta name="description" content="design portfolio" />
-<meta name="keywords"  content="design,graphic,portfolio,cool" />
-<meta name="Resource-type" content="Document" />
-<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+	<title>Jimmy Don Design</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jimmy Don Design</title>
+	<meta name="author" content="Jimmy Don" />
+	<meta name="description" content="design portfolio" />
+	<meta name="keywords"  content="design,graphic,portfolio,cool" />
+	<meta name="Resource-type" content="Document" />
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
 
-<link rel="stylesheet" type="text/css" href="css/slick.css">
-<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/scrolloverflow.js"></script>
-<script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
-<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-			sectionsColor: ['#fff']
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#checkbox').change(function(){
+				setInterval(function () {
+					moveRight();
+				}, 3000);
+			});
 		});
-		$('#checkbox').change(function(){
-			setInterval(function () {
-				moveRight();
-			}, 3000);
-		});
-	});
-</script>
-<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-	$(document).on('ready', function() {
-		$(".regular").slick({
-			dots: false,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1
-		});
-		$(".center").slick({
-			dots: true,
-			infinite: true,
-			centerMode: true,
-			slidesToShow: 3,
-			slidesToScroll: 3
-		});
-		$(".variable").slick({
-			dots: true,
-			infinite: true,
-			variableWidth: true
-		});
-		$(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-    });
-	});
-</script>
+	</script>
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
 <div id="fullpage">
