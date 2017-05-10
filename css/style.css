@@ -144,7 +144,7 @@ abbr,acronym { border: 0;
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
-	color: #000; 
+	color: #000;
 }
   	.fp-bg{
   		background-repeat: no-repeat;
@@ -159,7 +159,7 @@ abbr,acronym { border: 0;
   	}
   	.titles a {
   		position: relative;
-  		font-family: 'Custom','Space Mono',monospace; 
+  		font-family: 'Custom','Space Mono',monospace;
   		text-align: center;
   		padding: 20px;
   		color: #000;
@@ -169,7 +169,7 @@ abbr,acronym { border: 0;
   	}
   	.bars {
   		position: ra;
-  		font-family: 'Custom','Space Mono',monospace; 
+  		font-family: 'Custom','Space Mono',monospace;
   		text-align: center;
   		padding: 50px;
   		color: #000;
@@ -203,8 +203,8 @@ abbr,acronym { border: 0;
       text-align: center;
       position: absolute;
       bottom: 1%;
-      margin: auto; 
-      width: 100%; 
+      margin: auto;
+      width: 100%;
       background: linear-gradient(180deg, #ddd, transparent);
       background-size: 800% 800%;
       -webkit-background-clip: text;
@@ -233,7 +233,7 @@ abbr,acronym { border: 0;
     50%{background-position:50% 100%}
     100%{background-position:50% 0%}
 }
-@keyframes AnimationName { 
+@keyframes AnimationName {
     0%{background-position:50% 0%}
     50%{background-position:50% 100%}
     100%{background-position:50% 0%}
@@ -264,7 +264,7 @@ body {
       width: 100%;
       height: 100%;
       background: transparent;
-      right: 100px;
+      right: -576px;
     }
 
     .material-btn {
@@ -281,7 +281,7 @@ body {
       height: 75px;
       background: transparent;
       cursor: pointer;
-      transform: translate(100px, 0px);
+      transform: translate(-576px, 0px);
     }
     .material-btn.active:before {
       background-color: black;
@@ -324,7 +324,7 @@ body {
       list-style-type: none;
       padding: 0;
       text-align: right;
-      transform: translate(100px, 0px);
+      transform: translate(-576px, 0px);
     }
     nav li {
       will-change: transform, opacity;
