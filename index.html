@@ -23,56 +23,64 @@
   <script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        parallax: true,
-        parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
-        anchors: ['home', 'statement', 'projects', 'about'],
-        afterLoad: function(anchorLink){
-          if(anchorLink == 'projects'){
-            $("#fp-nav").fadeOut();
-          }
-          else{
-            $("#fp-nav").fadeIn();
-          }
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      parallax: true,
+      parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
+      anchors: ['home', 'statement', 'projects', 'about'],
+      afterLoad: function(anchorLink){
+        if(anchorLink == 'projects'){
+          $("#fp-nav").fadeOut();
         }
-      });
-      $('#checkbox').change(function(){
-        setInterval(function () {
-          moveRight();
-        }, 3000);
-      });
+        else{
+          $("#fp-nav").fadeIn();
+        }
+      }
     });
+    $('#checkbox').change(function(){
+      setInterval(function () {
+        moveRight();
+      }, 3000);
+    });
+  });
   </script>
   <link rel="preload" href="http://jimmydon.net/logo/libraries/p5.js" as="script">
   <link rel="preload" href="http://jimmydon.net/logo/sketch.js" as="script">
+  <script>
+    var p5Script = document.createElement('script');
+    var sketchScript = document.createElement('script');
+    p5Script.src = 'http://jimmydon.net/logo/libraries/p5.js';
+    sketchScript.src = 'http://jimmydon.net/logo/libraries/p5.js';
+    document.body.appendChild(p5Script)
+    document.body.appendChild(sketchScript)
+  </script>
   <!--<script src="http://jimmydon.net/js/slick.js" type="text/javascript" charset="utf-8"></script>-->
   <!--<script type="text/javascript">
-    $(document).on('ready', function() {
-      $(".regular").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-      $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      $(".variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true
-      });
-      $(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-      });
-    });
-  </script>-->
+  $(document).on('ready', function() {
+  $(".regular").slick({
+  dots: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+$(".center").slick({
+dots: true,
+infinite: true,
+centerMode: true,
+slidesToShow: 3,
+slidesToScroll: 3
+});
+$(".variable").slick({
+dots: true,
+infinite: true,
+variableWidth: true
+});
+$(".lazy").slick({
+lazyLoad: 'ondemand', // ondemand progressive anticipated
+infinite: true
+});
+});
+</script>-->
 </head>
 <body>
   <div id="fullpage">
@@ -128,7 +136,7 @@
         </div>
         <div class="titles"><a href="vertigo_identity.html">VERTIGO</a></div>
       </div>
-    <!--<div class="slide" style="background-image: url(img/quicksand/hero.jpg);">
+      <!--<div class="slide" style="background-image: url(img/quicksand/hero.jpg);">
       <div class="titles"><a href="quicksand_installation.html">QUICKSAND</a></div>
     </div>-->
     <div class="slide">
@@ -159,20 +167,20 @@
   <div class="section" id="section3">
     <div id="content">
       <!--<h1 style="text-align: center; font-family: 'Custom', 'Space Mono', monospace; font-size: .8em;">
-        INFO
-      </h1>-->
-      <br>
-      <p>
-        Hello! I am Jimmy, an artist and designer based in the Bay Area. I enjoy pushing the limits of what I can in my work, always striving for the bizarre and unconventional. Aside from design, my hobbies include photography, tinkering, hiking, and video games.
-        <br>
-        <br>
-        Get in touch with me at <span><a href="mailto:info@jimmydon.net">info@jimmydon.net</a></span> and download my resume <span><a href="JimmyDon_Resume.pdf" target="_blank">here</a></span>.
-      </p>
+      INFO
+    </h1>-->
+    <br>
+    <p>
+      Hello! I am Jimmy, an artist and designer based in the Bay Area. I enjoy pushing the limits of what I can in my work, always striving for the bizarre and unconventional. Aside from design, my hobbies include photography, tinkering, hiking, and video games.
       <br>
       <br>
-      <p style="font-size: 1em; text-align: center;">© Jimmy Don 2017</p>
-    </div>
+      Get in touch with me at <span><a href="mailto:info@jimmydon.net">info@jimmydon.net</a></span> and download my resume <span><a href="JimmyDon_Resume.pdf" target="_blank">here</a></span>.
+    </p>
+    <br>
+    <br>
+    <p style="font-size: 1em; text-align: center;">© Jimmy Don 2017</p>
   </div>
+</div>
 </div>
 </body>
 </html>
