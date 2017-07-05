@@ -29,12 +29,6 @@
       parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
       anchors: ['home', 'statement', 'projects', 'about'],
       afterLoad: function(anchorLink){
-        if(anchorLink == 'projects'){
-          $("#fp-nav").fadeOut();
-        }
-        else{
-          $("#fp-nav").fadeIn();
-        }
         if(anchorLink == 'home'){
           $("#nav").fadeOut();
         }
@@ -130,50 +124,46 @@ infinite: true
     </div>
     <!-- PROJECTS -->
     <div class="section" id="section2">
-      <div class="slide active">
-        <div class="fp-bg" style="background-image: url(img/csstype/mock.gif);"></div>
-        <div class="titles"><a href="typeface_css.html">TYPEFACE PLAYGROUND</a></div>
-      </div>
-      <div class="slide">
-        <div class="fp-bg" style="background-image: url(img/seeker/hero.jpg);"></div>
-        <div class="titles"><a href="seekers.html">SEEKERS</a></div>
-      </div>
-      <div class="slide">
-        <div class="fp-bg" style="background-image: url(img/rentmap/hero.jpg);"></div>
-        <div class="titles"><a href="transit_rent_map.html">TRANSIT RENT MAP</a></div>
-      </div>
-      <div class="slide">
-        <div class="fp-bg" style="background-image: url(img/vertigo/hero.jpg);">
-          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; background-color: rgba(255,255,255,0.65);"></div>
+      <div style="display: block; width: 80%; margin: 0 auto; margin-top: 200px;">
+        <div class="testbox">
+          <div class="test" style="background-image: url(img/csstype/mock.gif);"></div>
+          <div class="titles"><a href="typeface_css.html">TYPEFACE PLAYGROUND</a></div>
         </div>
-        <div class="titles"><a href="vertigo_identity.html">VERTIGO</a></div>
+        <div class="testbox">
+          <div class="test" style="background-image: url(img/seeker/hero.jpg);"></div>
+          <div class="titles"><a href="seekers.html">SEEKERS</a></div>
+        </div>
+        <div class="testbox">
+          <div class="test" style="background-image: url(img/rentmap/hero.jpg);"></div>
+          <div class="titles"><a href="transit_rent_map.html">TRANSIT RENT MAP</a></div>
+        </div>
+        <div class="testbox">
+          <div class="test" style="background-image: url(img/vertigo/hero1.jpg);">
+          </div>
+          <div class="titles"><a href="vertigo_identity.html">VERTIGO</a></div>
+        </div>
+        <!--<div class="slide" style="background-image: url(img/quicksand/hero.jpg);">
+        <div class="titles"><a href="quicksand_installation.html">QUICKSAND</a></div>
+      </div>-->
+      <div class="testbox">
+        <div class="test" style="background-image: url(img/book/hero.jpg);"></div>
+        <div class="titles"><a href="home_again_book.html">HOME AGAIN</a></div>
       </div>
-      <!--<div class="slide" style="background-image: url(img/quicksand/hero.jpg);">
-      <div class="titles"><a href="quicksand_installation.html">QUICKSAND</a></div>
-    </div>-->
-    <div class="slide">
-      <div class="fp-bg" style="background-image: url(img/book/hero.jpg);"></div>
-      <div class="titles"><a href="home_again_book.html">HOME AGAIN</a></div>
-    </div>
-    <div class="slide">
-      <div class="fp-bg" style="background-image: url(img/screenprint/hero.jpg);"></div>
-      <div class="titles"><a href="screenprint.html">SCREENPRINTS</a></div>
-      <div class="slide">
-        <div class="fp-bg" style="background-image: url(img/typeabstract/hero.jpg);"></div>
+      <div class="testbox">
+        <div class="test" style="background-image: url(img/screenprint/hero.jpg);"></div>
+        <div class="titles"><a href="screenprint.html">SCREENPRINTS</a></div>
+      </div>
+      <div class="testbox">
+        <div class="test" style="background-image: url(img/typeabstract/hero.jpg);"></div>
         <div class="titles"><a href="letter_as_image.html">LETTER AS IMAGE</a></div>
       </div>
-      <div class="slide">
-        <div class="fp-bg" style="background-image: url(img/typeimage/hero.jpg);"></div>
+      <div class="testbox">
+        <div class="test" style="background-image: url(img/typeimage/hero.jpg);"></div>
         <div class="titles"><a href="type_as_image.html">TYPE AS IMAGE</a></div>
       </div>
+      <div class="testbox" style="width: 99%; height: 200px;">
+      </div>
     </div>
-    <a href="#about" id="down">
-      <p>
-        Scroll
-        <br>
-        ▼
-      </p>
-    </a>
   </div>
   <!-- CONTACT -->
   <div class="section" id="section3">

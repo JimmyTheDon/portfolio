@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jimmy Don Design</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Jimmy Don Design</title>
 	<meta name="author" content="Jimmy Don" />
@@ -11,8 +10,7 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 
 	<script src="js/jquery.min.js"></script>
@@ -20,9 +18,21 @@
 	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			parallax: true,
+			parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
+			anchors: ['', 'info', 'proccess', 'project'],
+			afterLoad: function(anchorLink){
+				if(anchorLink == 'project'){
+					$("#fp-nav").fadeOut();
+				}
+				else{
+					$("#fp-nav").fadeIn();
+				}
+			}
+		});
 		$('#checkbox').change(function(){
 			setInterval(function () {
 				moveRight();
@@ -31,7 +41,6 @@
 	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
 	<div id="nav">
@@ -44,7 +53,8 @@
 		</ul>
 	</div>
 	<div id="fullpage">
-		<div class="section active" id="section0" style="background-image: url(img/typeimage/hero2.gif); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+		<div class="section active" id="section0">
+			<div class="fp-bg" style="background-image: url(img/typeimage/hero2.gif); opacity: 0.25;"></div>
 			<div class="bars">TYPE AS IMAGE</div>
 		</div>
 		<div class="section" id="section1">
@@ -52,39 +62,42 @@
 				As a continuation of the "Letter as Image" exploration, this experiment is the further exploration of type as form. However, this time I began to bring in photography and imagery, focusing on creating images out of the compositions rather than abstractions.
 			</p>
 		</div>
-		<div class="section" id="section2" style="background-image: url(img/typeimage/process1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-		<div class="section" id="section3" style="background-image: url(img/typeimage/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-		<div class="section" id="section4" style="background-image: url(img/typeimage/process2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-		<div class="section" id="section5">
-			<section class="regular slider" style="width: 50%; margin: auto;">
-				<div>
-					<img src="img/typeimage/typophoto-01.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-02.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-03.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-04.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-05.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-06.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-07.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-08.jpg">
-				</div>
-				<div>
-					<img src="img/typeimage/typophoto-09.jpg">
-				</div>
-			</section>
+		<div class="section" id="section2">
+			<div style="display: block; width: 80%; margin: 0 auto; margin-top: 200px;">
+				<img src="img/typeimage/process1.jpg" style="width: 99%; padding: 0.5%;">
+				<img src="img/typeimage/hero.jpg" style="width: 49%; padding: 0.5%; float: left;">
+				<img src="img/typeimage/process2.jpg" style="width: 49%; padding: 0.5%; float: left;">
+				<div class="testbox" style="width: 99%; height: 200px;"></div>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="slide active">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-01.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-02.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-03.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-04.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-05.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-06.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-07.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-08.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeimage/typophoto-09.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
 		</div>
 	</div>
 </body>
