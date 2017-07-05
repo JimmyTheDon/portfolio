@@ -9,8 +9,13 @@
   <meta name="Resource-type" content="Document" />
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
 
-  <!--<link rel="stylesheet" type="text/css" href="css/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">-->
+  <script src="http://jimmydon.net/logo/libraries/p5.js"></script>
+  <link rel="preload" href="http://jimmydon.net/logo/sketch.js" as="script">
+  <script>
+  var sketchScript = document.createElement('script');
+  sketchScript.src = 'http://jimmydon.net/logo/sketch.js';
+  document.head.appendChild(sketchScript);
+  </script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
@@ -44,40 +49,6 @@
     });
   });
   </script>
-  <script src="http://jimmydon.net/logo/libraries/p5.js"></script>
-  <link rel="preload" href="http://jimmydon.net/logo/sketch.js" as="script">
-  <script>
-  var sketchScript = document.createElement('script');
-  sketchScript.src = 'http://jimmydon.net/logo/sketch.js';
-  document.head.appendChild(sketchScript);
-  </script>
-  <!--<script src="http://jimmydon.net/js/slick.js" type="text/javascript" charset="utf-8"></script>-->
-  <!--<script type="text/javascript">
-  $(document).on('ready', function() {
-  $(".regular").slick({
-  dots: false,
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1
-});
-$(".center").slick({
-dots: true,
-infinite: true,
-centerMode: true,
-slidesToShow: 3,
-slidesToScroll: 3
-});
-$(".variable").slick({
-dots: true,
-infinite: true,
-variableWidth: true
-});
-$(".lazy").slick({
-lazyLoad: 'ondemand', // ondemand progressive anticipated
-infinite: true
-});
-});
-</script>-->
 </head>
 <body>
   <div id="nav">
@@ -102,25 +73,11 @@ infinite: true
         </div>
       </div>
       <h1 id="main" style="left: 10px;">JIMMY DON</h1>
-      <a href="#statement" id="down">
-        <p>
-          Scroll
-          <br>
-          ▼
-        </p>
-      </a>
     </div>
     <div class="section" id="section1">
       <div id="content">
         <p>I enjoy exploring ways in which the combination of digital and print can create a synergistic effect, and experimenting in merging analog and digital processes in creating unique approaches.</p>
       </div>
-      <a href="#projects" id="down">
-        <p>
-          Scroll
-          <br>
-          ▼
-        </p>
-      </a>
     </div>
     <!-- PROJECTS -->
     <div class="section" id="section2">
@@ -168,9 +125,6 @@ infinite: true
   <!-- CONTACT -->
   <div class="section" id="section3">
     <div id="content">
-      <!--<h1 style="text-align: center; font-family: 'Custom', 'Space Mono', monospace; font-size: .8em;">
-      INFO
-    </h1>-->
     <br>
     <p>
       Hello! I am Jimmy, an artist and designer based in the Bay Area. I enjoy pushing the limits of what I can in my work, always striving for the bizarre and unconventional. Aside from design, my hobbies include photography, tinkering, hiking, and video games.
