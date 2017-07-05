@@ -22,47 +22,34 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+	$(document).ready(function() {
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
 		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
-	<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
-			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+	<div id="nav">
+		<div id="navoverlay"></div>
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
 	</div>
-	<main>
 	<div id="fullpage">
 		<div class="section active" id="section0" style="background-image: url(img/typeimage/hero2.gif); background-repeat: no-repeat; background-position: center center; background-size: cover;">
 			<div class="bars">TYPE AS IMAGE</div>
 		</div>
 		<div class="section" id="section1">
 			<p id="content">
-				As a continuation of the "Letter as Image" exploration, this experiment is the further exploration of type as form. However, this time I began to bring in photography and imagery, focusing on creating images out of the compositions rather than abstractions. 
+				As a continuation of the "Letter as Image" exploration, this experiment is the further exploration of type as form. However, this time I began to bring in photography and imagery, focusing on creating images out of the compositions rather than abstractions.
 			</p>
 		</div>
 		<div class="section" id="section2" style="background-image: url(img/typeimage/process1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
@@ -100,7 +87,5 @@
 			</section>
 		</div>
 	</div>
-	</main>
-	<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

@@ -22,67 +22,54 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+	$(document).ready(function() {
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
 		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
-	<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
-			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
-			</div>
+	<div id="nav">
+		<div id="navoverlay"></div>
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div class="fp-bg" style="background-image: url(img/book/IMG_0051.jpg);"></div>
+			<div class="bars" style="background-color: #E5E8E8;">HOME AGAIN</div>
+		</div>
+		<div class="section" id="section1">
+			<p id="content">
+				This book is a personal project in which I decided to explore the idea of a home, and what it was to me. The book consists of my personal writing and photography as I explored the 400 block of 40th Street, Oakland, and my new place of residence as of 2015.
+			</p>
+		</div>
+		<div class="section" id="section1">
+			<div class="fp-bg" style="background-image: url(img/book/hero.jpg);"></div>
+		</div>
+		<div class="section" id="section2">
+			<div class="fp-bg" style="background-image: url(img/book/IMG_0066.jpg);"></div>
+		</div>
+		<div class="section" id="section3">
+			<div class="fp-bg" style="background-image: url(img/book/IMG_0061.jpg);"></div>
+		</div>
+		<div class="section" id="section4">
+			<div class="fp-bg" style="background-image: url(img/book/IMG_0067.jpg);"></div>
+		</div>
+		<div class="section" id="section5">
+			<div class="fp-bg" style="background-image: url(img/book/IMG_0068.jpg);"></div>
 		</div>
 	</div>
-	<main>
-		<div id="fullpage">
-			<div class="section active" id="section0">
-				<div class="fp-bg" style="background-image: url(img/book/IMG_0051.jpg);"></div>
-				<div class="bars" style="background-color: #E5E8E8;">HOME AGAIN</div>
-			</div>
-			<div class="section" id="section1">
-				<p id="content">
-					This book is a personal project in which I decided to explore the idea of a home, and what it was to me. The book consists of my personal writing and photography as I explored the 400 block of 40th Street, Oakland, and my new place of residence as of 2015.
-				</p>
-			</div>
-			<div class="section" id="section1">
-				<div class="fp-bg" style="background-image: url(img/book/hero.jpg);"></div>
-			</div>
-			<div class="section" id="section2">
-				<div class="fp-bg" style="background-image: url(img/book/IMG_0066.jpg);"></div>
-			</div>
-			<div class="section" id="section3">
-				<div class="fp-bg" style="background-image: url(img/book/IMG_0061.jpg);"></div>
-			</div>
-			<div class="section" id="section4">
-				<div class="fp-bg" style="background-image: url(img/book/IMG_0067.jpg);"></div>
-			</div>
-			<div class="section" id="section5">
-				<div class="fp-bg" style="background-image: url(img/book/IMG_0068.jpg);"></div>
-			</div>
-		</div>
-	</main>
-	<script type="text/javascript" src="js/nav.js"></script>
+</main>
+
 </body>
 </html>

@@ -22,54 +22,38 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+	$(document).ready(function() {
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
 		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
-<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
+	<div id="nav">
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div style="position: fixed; width: 100%; height: 100%; top: 0; background-color: #fff; pointer-events: none; opacity: 0.25;">
+				<iframe src="https://player.vimeo.com/video/212898166?autoplay=1&loop=1&color=000000&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
-			</div>
+			<div class="bars">TYPEFACE PLAYGROUND</div>
+		</div>
+		<div class="section" id="section1">
+			<p id="content">
+				The following was an exploration and experimentation of using the web as a platform or medium. Through the use of HTML and CSS, I built a monospaced typeface that was more or less the reverse form. Then I brought in P5.js to give it some interactivity. You can visit the site <a href="http://jimmythedon.github.io/interactive2/projects/project2/css_typeface.html" target="_blank">here</a>.
+			</p>
 		</div>
 	</div>
-	<main>
-<div id="fullpage">
-	<div class="section active" id="section0">
-		<div style="position: fixed; width: 100%; height: 100%; top: 0; background-color: #000; pointer-events: none;">
-			<iframe src="https://player.vimeo.com/video/212898166?autoplay=1&loop=1&color=000000&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</div>
-		<div class="bars" style="background-color: #E5E8E8;">TYPEFACE PLAYGROUND</div>
-	</div>
-	<div class="section" id="section1">
-		<p id="content">
-			The following was an exploration and experimentation of using the web as a platform or medium. Through the use of HTML and CSS, I built a monospaced typeface that was more or less the reverse form. Then I brought in P5.js to give it some interactivity. You can visit the site <a href="http://jimmythedon.github.io/interactive2/projects/project2/css_typeface.html">here</a>.
-		</p>
-	</div>
-</div>
-</main>
-<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

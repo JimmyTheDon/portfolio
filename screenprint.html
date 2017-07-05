@@ -22,71 +22,86 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+	$(document).ready(function() {
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
 		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
-	<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
+	<div id="nav">
+		<div id="navoverlay"></div>
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div class="fp-bg" style="background-image: url(img/screenprint/097E6341.jpg); opacity: .25;"></div>
+			<div class="bars">SCREENPRINTS</div>
+		</div>
+		<div class="section" id="section1">
+			<p id="content">
+				The following are various screenprints that I have done. As a printer, I really enjoy pushing my limits and also bringing in digital aspects into the form of print.
+			</p>
+		</div>
+		<div class="section" id="section2">
+			<div style="display: block; width: 75%; margin: 0 auto;">
+				<img src="img/screenprint/097E6404.jpg" style="width: 99%; float: left; padding: 0.5%; padding-top: 100px;">
+				<img src="img/screenprint/097E6420.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<img src="img/screenprint/097E6431.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<p class="caption">
+
+					Eight color print<br>
+					11" x 14" Canson Bristol<br>
+					Edition of 15
+				</p>
 			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
+		</div>
+		<div class="section" id="section3">
+			<div style="display: block; width: 75%; margin: 0 auto;">
+				<img src="img/screenprint/097E6463.jpg" style="width: 99%; float: left; padding: 0.5%; padding-top: 100px;">
+				<img src="img/screenprint/097E6455.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<img src="img/screenprint/097E6449.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<p class="caption">
+					Three color print<br>
+					11" x 14" Arches 88<br>
+					Edition of 15
+				</p>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div style="display: block; width: 75%; margin: 0 auto;">
+				<img src="img/screenprint/097E6495.jpg" style="width: 99%; float: left; padding: 0.5%; padding-top: 100px;">
+				<img src="img/screenprint/097E6522.jpg" style="width: 99%; float: left; padding: 0.5%;">
+				<p class="caption">
+					Four color process print<br>
+					19.5" x 15" Arches 88<br>
+					Edition of 12
+				</p>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div style="display: block; width: 75%; margin: 0 auto;">
+				<img src="img/screenprint/097E6526.jpg" style="width: 99%; float: left; padding: 0.5%; padding-top: 100px;">
+				<img src="img/screenprint/097E6532.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<!--<img src="img/screenprint/097E6543.jpg" style="width: 49.5%;">-->
+				<img src="img/screenprint/097E6544.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<p class="caption">
+					Four color print<br>
+					6" x 6" Cast Acrylic Sheets<br>
+					Edition of 10 prints
+				</p>
 			</div>
 		</div>
 	</div>
-	<main>
-<div id="fullpage">
-	<div class="section active" id="section0" style="background-image: url(img/screenprint/097E6341.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-		<div class="bars" style="background-color: #E5E8E8;">SCREENPRINTS</div>
-	</div>
-	<div class="section" id="section1">
-		<p id="content">
-			The following are various screenprints that I have done. As a printer, I really enjoy pushing my limits and also bringing in digital aspects into the form of print.
-		</p>
-	</div>
-	<div class="section" id="section2">
-		<div class="slide" style="background-image: url(img/screenprint/097E6404.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6420.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6431.jpg);"></div>
-	</div>
-	<div class="section" id="section3">
-		<div class="slide" style="background-image: url(img/screenprint/097E6463.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6455.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6449.jpg);"></div>
-	</div>
-	<div class="section" id="section4">
-		<div class="slide" style="background-image: url(img/screenprint/097E6495.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6522.jpg);"></div>
-	</div>
-	<div class="section" id="section3">
-		<div class="slide" style="background-image: url(img/screenprint/097E6526.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6543.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6544.jpg);"></div>
-		<div class="slide" style="background-image: url(img/screenprint/097E6532.jpg);"></div>
-	</div>
-</div>
-</main>
-<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

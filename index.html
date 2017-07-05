@@ -35,6 +35,12 @@
         else{
           $("#fp-nav").fadeIn();
         }
+        if(anchorLink == 'home'){
+          $("#nav").fadeOut();
+        }
+        else{
+          $("#nav").fadeIn();
+        }
       }
     });
     $('#checkbox').change(function(){
@@ -47,9 +53,9 @@
   <script src="http://jimmydon.net/logo/libraries/p5.js"></script>
   <link rel="preload" href="http://jimmydon.net/logo/sketch.js" as="script">
   <script>
-    var sketchScript = document.createElement('script');
-    sketchScript.src = 'http://jimmydon.net/logo/sketch.js';
-    document.head.appendChild(sketchScript);
+  var sketchScript = document.createElement('script');
+  sketchScript.src = 'http://jimmydon.net/logo/sketch.js';
+  document.head.appendChild(sketchScript);
   </script>
   <!--<script src="http://jimmydon.net/js/slick.js" type="text/javascript" charset="utf-8"></script>-->
   <!--<script type="text/javascript">
@@ -80,6 +86,15 @@ infinite: true
 </script>-->
 </head>
 <body>
+  <div id="nav">
+    <div style="background-color: white; opacity: 0.7; width: 100%; height: 100%;"></div>
+    <ul id="navitem">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#statement">Statement</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#about">About</a></li>
+    </ul>
+  </div>
   <div id="fullpage">
     <div class="section active" id="section0">
       <div class="wrap">
@@ -116,7 +131,7 @@ infinite: true
     <!-- PROJECTS -->
     <div class="section" id="section2">
       <div class="slide active">
-        <!--<div class="fp-bg" style="background-image: url(img/csstype/mock.gif);"></div>-->
+        <div class="fp-bg" style="background-image: url(img/csstype/mock.gif);"></div>
         <div class="titles"><a href="typeface_css.html">TYPEFACE PLAYGROUND</a></div>
       </div>
       <div class="slide">
@@ -171,11 +186,11 @@ infinite: true
       Hello! I am Jimmy, an artist and designer based in the Bay Area. I enjoy pushing the limits of what I can in my work, always striving for the bizarre and unconventional. Aside from design, my hobbies include photography, tinkering, hiking, and video games.
       <br>
       <br>
-      Get in touch with me at <span><a href="mailto:info@jimmydon.net">info@jimmydon.net</a></span> and download my resume <span><a href="JimmyDon_Resume.pdf" target="_blank">here</a></span>.
+      Get in touch with me at <a href="mailto:info@jimmydon.net" style="text-decoration: underline; color: #C80000;">info@jimmydon.net</a> and download my resume <a href="JimmyDon_Resume.pdf" target="_blank" style="text-decoration: underline; color: #C80000;">here</a>.
     </p>
     <br>
     <br>
-    <p style="font-size: 1em; text-align: center;">© Jimmy Don 2017</p>
+    <p style="font-size: 0.5em; text-align: center; line-height: 1.4em;">© Jimmy Don 2017<br>This site is coded using Atom Editor and hosted on Github.</p>
   </div>
 </div>
 </div>

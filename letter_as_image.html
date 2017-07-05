@@ -22,80 +22,65 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				parallax: true,
-				parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
-				anchors: ['', 'info', 'project'],
-				afterLoad: function(anchorLink){
-					if(anchorLink == 'project'){
-						$("#fp-nav").fadeOut();
-					}
-					else{
-						$("#fp-nav").fadeIn();
-					}
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			parallax: true,
+			parallaxKey: 'amltbXlkb24ubmV0X004R2NHRnlZV3hzWVhnPXBTNw==',
+			anchors: ['', 'info', 'project'],
+			afterLoad: function(anchorLink){
+				if(anchorLink == 'project'){
+					$("#fp-nav").fadeOut();
 				}
-			});
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+				else{
+					$("#fp-nav").fadeIn();
+				}
+			}
 		});
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
+		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
+	<div id="nav">
+		<div id="navoverlay"></div>
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0" style="background-image: url(img/typeabstract/thirdhero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+			<div class="bars">LETTER AS IMAGE</div>
+		</div>
+		<div class="section" id="section1">
+			<p id="content">
+				This was an experiment in which I took letterforms and abstracted them through deconstruction and manipulation. In order to create these compositions, it was a combination analog processes consisting of cutting, pasting, and photocopying a variety of paper substrates. Within each composition, I explored technical concepts such as symmetry, asymmetry, scale, balance, and contrast.
+			</p>
+		</div>
+		<div class="section" id="section2">
+			<div class="slide active">
+				<div class="fp-bg" style="background-image: url(img/typeabstract/9.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
 			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeabstract/6.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeabstract/8.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeabstract/7.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
+			</div>
+			<div class="slide">
+				<div class="fp-bg" style="background-image: url(img/typeabstract/10.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
 			</div>
 		</div>
 	</div>
-	<main>
-		<div id="fullpage">
-			<div class="section active" id="section0" style="background-image: url(img/typeabstract/thirdhero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-				<div class="bars">LETTER AS IMAGE</div>
-			</div>
-			<div class="section" id="section1">
-				<p id="content">
-					This was an experiment in which I took letterforms and abstracted them through deconstruction and manipulation. In order to create these compositions, it was a combination analog processes consisting of cutting, pasting, and photocopying a variety of paper substrates. Within each composition, I explored technical concepts such as symmetry, asymmetry, scale, balance, and contrast.
-				</p>
-			</div>
-			<div class="section" id="section2">
-				<div class="slide active">
-					<div class="fp-bg" style="background-image: url(img/typeabstract/9.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
-				</div>
-				<div class="slide">
-					<div class="fp-bg" style="background-image: url(img/typeabstract/6.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
-				</div>
-				<div class="slide">
-					<div class="fp-bg" style="background-image: url(img/typeabstract/8.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
-				</div>
-				<div class="slide">
-					<div class="fp-bg" style="background-image: url(img/typeabstract/7.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
-				</div>
-				<div class="slide">
-					<div class="fp-bg" style="background-image: url(img/typeabstract/10.jpg); background-repeat: none; background-position: center center; background-size: contain;"></div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

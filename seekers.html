@@ -22,67 +22,53 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+	$(document).ready(function() {
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
 		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
-	<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
-			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
-			</div>
+	<div id="nav">
+		<div id="navoverlay"></div>
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div class="fp-bg" style="background-image: url(img/seeker/hero2.jpg); opacity: .4;"></div>
+			<div class="bars">SEEKERS</div>
 		</div>
+		<div class="section" id="section1">
+			<p id="content">
+				Seekers was an in-depth research project in which I studied the culture of conspiracy theories and designed an identity and collateral based upon the various aspects I found interesting about the culture.
+			</p>
+		</div>
+		<div class="section" id="section2" style="background-color: #000;">
+			<img src="img/seeker/logo_animation2.gif" style=" width: 70%; position: relative; padding: 0 15% 0 15%;">
+		</div>
+		<div class="section" id="section2">
+			<h1 style="text-align: center; font-family: 'Custom', 'Space Mono', monospace; font-size: .8em;">
+				MANIFESTO
+			</h1>
+			<br>
+			<p id="content">
+				We ask the questions and confront the status quo many are too afraid to ask. Their failure to ask keeps them safe and secure from fear of reality. However, it leaves them susceptible to greater evils to be taken advantage of. We seek to enlighten the blind sheep they have all become and reveal the hidden workings of these cabals that seek to rule over us. We remain vigilant against this global arch-society, and seek to challenge the verity of what is fed to us through mainstream media that many have blindly stumbled into. Our tenacity will expose their diabolical secrets and bring to light the occult. We are Seekers!
+			</p>
+		</div>
+		<div class="section" id="section3" style="background-image: url(img/seeker/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		<div class="section" id="section3" style="background-image: url(img/seeker/mockup.gif); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		<div class="section" id="section3" style="background-image: url(img/seeker/cryptex1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
+		<div class="section" id="section5" style="background-image: url(img/seeker/cryptex2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
 	</div>
-	<main>
-<div id="fullpage">
-	<div class="section active" id="section0" style="background-image: url(img/seeker/hero2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-		<div class="bars">SEEKERS</div>
-	</div>
-	<div class="section" id="section1">
-		<p id="content">
-			Seekers was an in-depth research project in which I studied the culture of conspiracy theories and designed an identity and collateral based upon the various aspects I found interesting about the culture.
-		</p>
-	</div>
-	<div class="section" id="section2" style="background-color: #000;">
-		<img src="img/seeker/logo_animation2.gif" style=" width: 70%; position: relative; padding: 0 15% 0 15%;">
-	</div>
-	<div class="section" id="section2">
-		<h1 style="text-align: center; font-family: 'Custom', 'Space Mono', monospace; font-size: .8em;">
-        	MANIFESTO
-      	</h1>
-      	<br>
-		<p id="content">
-			We ask the questions and confront the status quo many are too afraid to ask. Their failure to ask keeps them safe and secure from fear of reality. However, it leaves them susceptible to greater evils to be taken advantage of. We seek to enlighten the blind sheep they have all become and reveal the hidden workings of these cabals that seek to rule over us. We remain vigilant against this global arch-society, and seek to challenge the verity of what is fed to us through mainstream media that many have blindly stumbled into. Our tenacity will expose their diabolical secrets and bring to light the occult. We are Seekers!
-		</p>
-	</div>
-	<div class="section" id="section3" style="background-image: url(img/seeker/hero.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section3" style="background-image: url(img/seeker/mockup.gif); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section3" style="background-image: url(img/seeker/cryptex1.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section5" style="background-image: url(img/seeker/cryptex2.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-</div>
-</main>
-<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

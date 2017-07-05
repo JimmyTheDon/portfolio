@@ -22,55 +22,45 @@
 	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#checkbox').change(function(){
-				setInterval(function () {
-					moveRight();
-				}, 3000);
-			});
+	$(document).ready(function() {
+		$('#checkbox').change(function(){
+			setInterval(function () {
+				moveRight();
+			}, 3000);
 		});
+	});
 	</script>
 	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 <body>
-	<div class="material-menu-wrapper">
-		<div class="material-menu">
-			<div class="material-btn">
-				<div class="material-hamburger">
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-					<div class="material-patty"></div>
-				</div>
-			</div>
-			<div class="material-content">
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="index.html#statement">STATEMENT</a></li>
-						<li><a href="index.html#projects">PROJECTS</a></li>
-						<li><a href="index.html#about">ABOUT</a></li>
-					</ul>
-				</nav>
+	<div id="nav">
+		<div id="navoverlay"></div>
+		<ul id="navitem">
+			<li><a href="index.html#home">Home</a></li>
+			<li><a href="index.html#statement">Statement</a></li>
+			<li><a href="index.html#projects">Projects</a></li>
+			<li><a href="index.html#about">About</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0"> <div class="fp-bg" style="background-image: url(img/vertigo/IMG_6634.jpg); opacity: 0.25;"></div>
+			<div class="bars">VERTIGO</div>
+		</div>
+		<div class="section" id="section1">
+			<div style="width: 80%; margin: 0 auto;">
+				<img src="img/vertigo/IMG_6634.jpg" style="width: 99%; float: left; padding: 0.5%; padding-top: 0;">
+				<img src="img/vertigo/IMG_6638.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<img src="img/vertigo/IMG_6642.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<img src="img/vertigo/IMG_6644.jpg" style="width: 49%; float: left; padding: 0.5%;">
+				<img src="img/vertigo/IMG_6637.jpg" style="width: 49%; float: left; padding: 0.5%;">
 			</div>
 		</div>
+		<div class="section" id="section2">
+			<p id="content">
+				Vertigo is a hypothetical upscaled rooftop bar/lounge and a pun. For it's identity, I decided to go back to reinvision Bauer's Bodoni, and its extreme thicks and thins. The original specimen was drawn by Heinrich Jost. In approaching this revival project, I also wanted to challenge myself and push my own limits.
+			</p>
+		</div>
 	</div>
-	<main>
-<div id="fullpage">
-	<div class="section active" id="section0" style="background-image: url(img/vertigo/IMG_6634.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-		<div class="bars" style="background-color: #E5E8E8;">VERTIGO</div>
-	</div>
-	<div class="section" id="section1">
-		<p id="content">
-			Vertigo is a hypothetical upscaled rooftop bar/lounge and a pun. For it's identity, I decided to go back to reinvision Bauer's Bodoni, and its extreme thicks and thins. The original specimen was drawn by Heinrich Jost. In approaching this revival project, I also wanted to challenge myself and push my own limits.
-		</p>
-	</div>
-	<div class="section" id="section1" style="background-image: url(img/vertigo/IMG_6638.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section2" style="background-image: url(img/vertigo/IMG_6642.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section3" style="background-image: url(img/vertigo/IMG_6637.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-	<div class="section" id="section4" style="background-image: url(img/vertigo/IMG_6644.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover;"></div>
-</div>
-</main>
-<script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 var circle = document.querySelector('.material-btn');
 var link = document.querySelector('.material-content').querySelectorAll('li');
 var ham = document.querySelector('.material-hamburger');
-var main = document.querySelector('main');
+var main = document.querySelector('#fullpage');
 var win = window;
 
 function openMenu(event) {
