@@ -37,19 +37,29 @@
       var secondsSpanEl = document.createElement('a-entity');
       secondsSpanEl.setAttribute('text', 'align: center; width: 10;');
       secondsSpanEl.setAttribute('position', '0.45 2 -3');
-      //var minutesSpanEl = clock.querySelector('#minutes');
-      //var secondsSpanEl = clock.querySelector('#seconds');
+      var firework1 = document.createElement('a-entity');
+      firework1.setAttribute('position', '0 0 -5');
+      firework1.setAttribute('particle-system','preset: default; color: #222; particleCount: 1000;');
+      firework1.setAttribute('rotation', '0 0 45');
+      var firework2 = document.createElement('a-entity');
+      firework2.setAttribute('position', '0 0 -5');
+      firework2.setAttribute('particle-system','preset: default; color: #222; particleCount: 1000;');
+      firework2.setAttribute('rotation', '0 0 -45');
+      var firework3 = document.createElement('a-entity');
+      firework3.setAttribute('position', '0 0 -5');
+      firework3.setAttribute('particle-system','preset: default; color: #222; particleCount: 1000;');
 
       function updateClock() {
         var t = getTimeRemaining(endtime);
 
         minutesSpanEl.setAttribute('text', 'value: '+('0' + t.minutes).slice(-2)+';');
         secondsSpanEl.setAttribute('text', 'value: '+('0' + t.seconds).slice(-2)+';');
-        //minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        //secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
         if (t.total <= 0) {
           clearInterval(timeinterval);
+          clock.appendChild(firework1);
+          clock.appendChild(firework2);
+          clock.appendChild(firework3);
         }
       }
       updateClock();
@@ -57,7 +67,7 @@
       clock.appendChild(minutesSpanEl);
       clock.appendChild(secondsSpanEl);
     }
-    var deadline = new Date(Date.parse(new Date()) + 5 * 60 * 1000);
+    var deadline = new Date(Date.parse(new Date()) + 1 * 30 * 1000);
     initializeClock('clockdiv', deadline);
     </script>
 
