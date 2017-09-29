@@ -13,10 +13,10 @@
       <a-assets>
         <img id="groundTexture" src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png">
       </a-assets>
-      <a-entity id='words' text="align: center; width: 5; value: Hello World;" position="0 3 -3"></a-entity>
+      <a-entity id='words' text="align: center; width: 5; value: Please Wait;" position="0 1.5 0"></a-entity>
           <!--<a-entity id="minutes" text="align: center; width: 10; value: 00" position="-0.45 2 -3"></a-entity>
           <a-entity id="seconds" text="align: center; width: 10; value: 00" position="0.45 2 -3"></a-entity>-->
-      <a-entity id="plane" geometry="primitive: plane; width: 10000; height: 10000" material="color: #fff; src: #groundTexture; repeat: 10000 10000; transparent: true; metalness: 0.6; roughness: 0.4" rotation="-90 0 0"></a-entity>
+      <!--<a-entity id="plane" geometry="primitive: plane; width: 10000; height: 10000" material="color: #fff; src: #groundTexture; repeat: 10000 10000; transparent: true; metalness: 0.6; roughness: 0.4" rotation="-90 0 0"></a-entity>-->
       <!--<a-entity id="sky" geometry="primitive: sphere; radius: 100" material="color: #f49ef7; shader: flat; side: back"></a-entity>-->
       <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
@@ -37,20 +37,20 @@
       var clock = document.querySelector('a-scene');
       var minutesSpanEl = document.createElement('a-entity');
       minutesSpanEl.setAttribute('text', 'align: center; width: 10;');
-      minutesSpanEl.setAttribute('position', '-0.45 2 -3');
+      minutesSpanEl.setAttribute('position', '-0.45 0.5 0');
       var secondsSpanEl = document.createElement('a-entity');
       secondsSpanEl.setAttribute('text', 'align: center; width: 10;');
-      secondsSpanEl.setAttribute('position', '0.45 2 -3');
+      secondsSpanEl.setAttribute('position', '0.45 0.5 0');
       var firework1 = document.createElement('a-entity');
-      firework1.setAttribute('position', '0 0 -5');
+      firework1.setAttribute('position', '0 0 -3');
       firework1.setAttribute('particle-system','preset: default; color: #222; particleCount: 1000;');
       firework1.setAttribute('rotation', '0 0 45');
       var firework2 = document.createElement('a-entity');
-      firework2.setAttribute('position', '0 0 -5');
+      firework2.setAttribute('position', '0 0 -3');
       firework2.setAttribute('particle-system','preset: default; color: #222; particleCount: 1000;');
       firework2.setAttribute('rotation', '0 0 -45');
       var firework3 = document.createElement('a-entity');
-      firework3.setAttribute('position', '0 0 -5');
+      firework3.setAttribute('position', '0 0 -3');
       firework3.setAttribute('particle-system','preset: default; color: #222; particleCount: 1000;');
 
       function updateClock() {
