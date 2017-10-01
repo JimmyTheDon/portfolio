@@ -76,9 +76,9 @@ src: url("logo/assets/font.woff");
 }*/
 @font-face {
 	font-family: Custom;
-	src: url("http://jimmydon.net/img/logotype/test3.otf");
-	src: url("http://jimmydon.net/img/logotype/test3.woff");
-	src: url("http://jimmydon.net/img/logotype/test3.ttf");
+	src: url("https://jimmydon.net/img/logotype/test3.otf");
+	src: url("https://jimmydon.net/img/logotype/test3.woff");
+	src: url("https://jimmydon.net/img/logotype/test3.ttf");
 }
 body{
 	width: 100%;
